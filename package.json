@@ -2,6 +2,9 @@
   "private": true,
   "name": "moon-examples",
   "infra": "monorepo",
+  "scripts": {
+    "moon": "moon"
+  },
   "workspaces": [
     "packages/*"
   ],
