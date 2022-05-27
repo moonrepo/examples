@@ -1,19 +1,11 @@
 {
-  "compilerOptions": {
-    "declarationDir": "dts",
-    "emitDeclarationOnly": true,
-    "outDir": "dts",
-    "rootDir": "src"
-  },
-  "exclude": [
-    "dts",
-    "tests"
-  ],
   "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "outDir": "../../.moon/dts/packages/cjs-package",
+    "rootDir": "."
+  },
   "include": [
-    "src/**/*",
-    "types/**/*",
-    "../../types/**/*"
+    "**/*"
   ],
   "references": []
 }

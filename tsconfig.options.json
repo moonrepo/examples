@@ -1,9 +1,8 @@
 // https://www.npmjs.com/package/tsconfig-beemo
 {
   "extends": "tsconfig-beemo/tsconfig.workspaces.json",
-  // Uncomment if using React/JSX
-  // "compilerOptions": {
-  //   "lib": ["dom"],
-  //   "jsx": "react"
-  // }
+  "compilerOptions": {
+    "moduleResolution": "nodenext",
+    "target": "es2022"
+  }
 }
