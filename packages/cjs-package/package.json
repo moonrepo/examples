@@ -1,0 +1,16 @@
+{
+  "name": "cjs-package",
+  "version": "0.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "moon",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/moonrepo/examples",
+    "directory": "packages/cjs-package"
+  },
+  "packemon": {
+    "platform": "node"
+  }
+}

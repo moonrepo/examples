@@ -1,5 +1,12 @@
 {
   "extends": "./tsconfig.options.json",
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "packages/cjs-package"
+    },
+    {
+      "path": "packages/cjs-package/tests"
+    }
+  ]
 }
