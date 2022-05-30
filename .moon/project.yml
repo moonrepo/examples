@@ -63,6 +63,9 @@ tasks:
       - '/.eslintignore'
       - '/.eslintrc'
       - '/.eslintrc.*'
+      - 'tsconfig.json'
+      - '/tsconfig.eslint.json'
+      - '/tsconfig.options.json'
 
   # https://moonrepo.dev/docs/guides/examples/typescript
   typecheck:
