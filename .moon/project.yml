@@ -48,11 +48,28 @@ tasks:
       - '--build'
       - '--verbose'
     inputs:
-      - 'src/**/*'
-      - 'tests/**/*'
-      - 'types/**/*'
+      - '@globs(sources)'
+      - '@globs(tests)'
       - 'tsconfig.json'
       - 'tsconfig.*.json'
       - '/tsconfig.options.json'
     # outputs:
     #   - 'dts'
+
+  buildPackage:
+    command: 'packemon'
+    args:
+      - 'pack'
+      - '--addEngines'
+      - '--addExports'
+      - '--declaration'
+      - '--declarationConfig'
+      - 'tsconfig.build.json'
+    inputs:
+      - '@globs(sources)'
+      - 'package.json'
+      - 'tsconfig.build.json'
+    outputs:
+      - 'dts'
+    env:
+      NODE_ENV: 'production'

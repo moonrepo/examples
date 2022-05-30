@@ -25,6 +25,7 @@ node_modules/
 # Custom
 *.min.js
 *.map
+*.tsbuildinfo
 
 # Moon
 .moon/cache

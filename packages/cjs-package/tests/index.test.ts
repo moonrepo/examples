@@ -1,4 +1,4 @@
-import { add } from '../src';
+import { add } from '../src/index.cjs';
 
 describe('add()', () => {
 	it('should add numbers', () => {
