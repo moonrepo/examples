@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.projectOptions.json",
   "compilerOptions": {
-    "outDir": "../../.moon/dts/packages/cjs-package",
+    "outDir": "../../.moon/dts/packages/mjs-package",
     "rootDir": "."
   },
   "include": [

@@ -1,0 +1,9 @@
+tasks:
+  build:
+    outputs:
+      - mjs
+
+workspace:
+  inheritedTasks:
+    rename:
+      buildPackage: build

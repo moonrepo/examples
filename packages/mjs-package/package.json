@@ -1,0 +1,46 @@
+{
+  "name": "mjs-package",
+  "version": "0.0.0",
+  "type": "module",
+  "description": "A Node.js MJS package.",
+  "keywords": [
+    "node",
+    "mjs"
+  ],
+  "author": "moon",
+  "license": "MIT",
+  "repository": "https://github.com/moonrepo/examples",
+  "packemon": {
+    "format": "mjs",
+    "platform": "node",
+    "inputs": {
+      "index": "src/index.mts"
+    }
+  },
+  "engines": {
+    "node": ">=14.15.0",
+    "npm": ">=6.14.0"
+  },
+  "files": [
+    "dts/**/*.d.mts",
+    "mjs/**/*.{mjs,map}",
+    "src/**/*.{mts,json}"
+  ],
+  "types": "./dts/index.d.mts",
+  "main": "./mjs/index.mjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./*": {
+      "types": "./dts/*.d.mts",
+      "node": {
+        "import": "./mjs/*.mjs"
+      }
+    },
+    ".": {
+      "types": "./dts/index.d.mts",
+      "node": {
+        "import": "./mjs/index.mjs"
+      }
+    }
+  }
+}

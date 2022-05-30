@@ -6,7 +6,7 @@
       "path": "packages/cjs-package"
     },
     {
-      "path": "packages/cjs-package/tests"
+      "path": "packages/mjs-package"
     }
   ]
 }
