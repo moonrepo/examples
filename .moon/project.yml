@@ -11,7 +11,7 @@ $schema: 'https://moonrepo.dev/schemas/global-project.json'
 fileGroups:
   # List of configuration files located within the project root.
   configs:
-    - '*.{js,json}'
+    - '*.{js,json,yml,yaml}'
 
   # List of non-test JavaScript/TypeScript source files.
   # This may include runtime, published, or distributable files.
@@ -32,7 +32,7 @@ fileGroups:
     - 'images/**/*'
     - 'static/**/*'
     - '**/*.{scss,css}'
-    - '**/*.mdx'
+    - '**/*.{md,mdx}'
 
 # OPTIONAL: A task is an action that is ran within the context of a project, and wraps
 # around an npm or system command. Tasks that are defined here and inherited by all projects
@@ -41,6 +41,41 @@ fileGroups:
 # This setting requires a map, where the key is a unique name for the task,
 # and the value is an object of task parameters.
 tasks:
+  buildPackage:
+    command: 'packemon'
+    args:
+      - 'pack'
+      - '--addEngines'
+      - '--addExports'
+      - '--declaration'
+      - '--declarationConfig'
+      - 'tsconfig.build.json'
+    inputs:
+      - '@globs(sources)'
+      - 'package.json'
+      - 'tsconfig.build.json'
+    outputs:
+      - 'dts'
+    env:
+      NODE_ENV: 'production'
+
+  format:
+    command: 'prettier'
+    args:
+      - '--config'
+      - '@in(5)'
+      - '--ignore-path'
+      - '@in(4)'
+      - '--check'
+      - '.'
+    inputs:
+      - '@globs(sources)'
+      - '@globs(tests)'
+      - '@globs(configs)'
+      - '**/*.{md,mdx}'
+      - '/.prettierignore'
+      - '/prettier.config.js'
+
   # https://moonrepo.dev/docs/guides/examples/eslint
   lint:
     command: 'eslint'
@@ -91,23 +126,3 @@ tasks:
       - 'tsconfig.json'
       - 'tsconfig.*.json'
       - '/tsconfig.options.json'
-    # outputs:
-    #   - 'dts'
-
-  buildPackage:
-    command: 'packemon'
-    args:
-      - 'pack'
-      - '--addEngines'
-      - '--addExports'
-      - '--declaration'
-      - '--declarationConfig'
-      - 'tsconfig.build.json'
-    inputs:
-      - '@globs(sources)'
-      - 'package.json'
-      - 'tsconfig.build.json'
-    outputs:
-      - 'dts'
-    env:
-      NODE_ENV: 'production'
