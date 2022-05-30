@@ -4,6 +4,9 @@
   "references": [
     {
       "path": "packages/cjs-package"
+    },
+    {
+      "path": "packages/mjs-package"
     }
   ]
 }

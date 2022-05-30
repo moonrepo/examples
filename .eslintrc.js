@@ -11,6 +11,9 @@ module.exports = {
 	],
 	rules: {
 		// Doesn't understand the new TS 4.7 imports
-		'import/no-unresolve': 'off',
+		'import/no-unresolved': 'off',
+
+		// We need to keep "index" around in imports for extensions
+		'import/no-useless-path-segments': 'off',
 	},
 };
