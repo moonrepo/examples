@@ -3,10 +3,16 @@
   "files": [],
   "references": [
     {
+      "path": "packages/browser-package"
+    },
+    {
       "path": "packages/cjs-package"
     },
     {
       "path": "packages/mjs-package"
+    },
+    {
+      "path": "packages/node-package"
     }
   ]
 }

@@ -7,5 +7,9 @@
   "include": [
     "**/*"
   ],
+  "exclude": [
+    "dts",
+    "mjs"
+  ],
   "references": []
 }

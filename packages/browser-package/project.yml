@@ -1,11 +1,10 @@
 tasks:
   build:
     outputs:
-      - mjs
+      - esm
+      - lib
 
 workspace:
   inheritedTasks:
-    # Jest/Babel don't support .mts yet
-    exclude: [test]
     rename:
       buildPackage: build
