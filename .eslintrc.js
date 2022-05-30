@@ -1,6 +1,10 @@
 // https://www.npmjs.com/package/eslint-config-beemo
 module.exports = {
 	root: true,
+	parserOptions: {
+		project: 'tsconfig.eslint.json',
+		tsconfigRootDir: __dirname,
+	},
 	extends: [
 		'beemo',
 		'beemo/node',

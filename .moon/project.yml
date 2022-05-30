@@ -41,6 +41,29 @@ fileGroups:
 # This setting requires a map, where the key is a unique name for the task,
 # and the value is an object of task parameters.
 tasks:
+  # https://moonrepo.dev/docs/guides/examples/eslint
+  lint:
+    command: 'eslint'
+    args:
+      - '--ext'
+      - '.ts,.tsx,.cts,.mts,.js,.jsx,.cjs,.mjs'
+      - '--fix'
+      - '--report-unused-disable-directives'
+      - '--no-error-on-unmatched-pattern'
+      - '--exit-on-fatal-error'
+      - '--ignore-path'
+      - '@in(5)'
+      - '.'
+    inputs:
+      - '@globs(sources)'
+      - '@globs(tests)'
+      - '*.config.*'
+      - '.eslintrc'
+      - '.eslintrc.*'
+      - '/.eslintignore'
+      - '/.eslintrc'
+      - '/.eslintrc.*'
+
   # https://moonrepo.dev/docs/guides/examples/typescript
   typecheck:
     command: 'tsc'
