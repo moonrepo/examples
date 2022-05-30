@@ -3,6 +3,9 @@
   "files": [],
   "references": [
     {
+      "path": "packages/browser-package"
+    },
+    {
       "path": "packages/cjs-package"
     },
     {

@@ -1,0 +1,41 @@
+{
+  "name": "browser-package",
+  "version": "0.0.0",
+  "description": "A browser package.",
+  "keywords": [
+    "node",
+    "lib",
+    "esm"
+  ],
+  "author": "moon",
+  "license": "MIT",
+  "repository": "https://github.com/moonrepo/examples",
+  "packemon": {
+    "format": "esm",
+    "platform": "browser"
+  },
+  "engines": {
+    "node": ">=14.15.0",
+    "npm": ">=6.14.0"
+  },
+  "files": [
+    "dts/**/*.d.ts",
+    "esm/**/*.{js,map}",
+    "lib/**/*.{js,map}",
+    "src/**/*.{ts,tsx,json}"
+  ],
+  "main": "./lib/index.js",
+  "module": "./esm/index.js",
+  "types": "./dts/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dts/index.d.ts",
+      "browser": {
+        "module": "./esm/index.js",
+        "import": "./esm/index.js"
+      },
+      "default": "./lib/index.js"
+    }
+  }
+}

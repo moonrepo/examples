@@ -5,6 +5,7 @@ $schema: 'https://moonrepo.dev/schemas/workspace.json'
 # are relative from the workspace root, and cannot reference projects located outside the
 # workspace boundary.
 projects:
+  browser-package: 'packages/browser-package'
   cjs-package: 'packages/cjs-package'
   mjs-package: 'packages/mjs-package'
   node-package: 'packages/node-package'

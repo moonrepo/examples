@@ -71,7 +71,6 @@ tasks:
   test:
     command: 'jest'
     args:
-      - '--coverage'
       - '--passWithNoTests'
       - '--preset'
       - 'jest-preset-beemo'

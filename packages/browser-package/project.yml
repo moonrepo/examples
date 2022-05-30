@@ -1,0 +1,10 @@
+tasks:
+  build:
+    outputs:
+      - esm
+      - lib
+
+workspace:
+  inheritedTasks:
+    rename:
+      buildPackage: build
