@@ -1,3 +1,16 @@
 workspace:
   inheritedTasks:
     exclude: [buildPackage]
+
+tasks:
+  build:
+    command: next
+    args: build
+  dev:
+    command: next
+    args: dev
+    options:
+      runInCI: false
+  start:
+    command: next
+    args: start
