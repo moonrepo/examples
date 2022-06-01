@@ -1,5 +1,5 @@
 {
-  "name": "browser-package",
+  "name": "@company/browser-package",
   "version": "0.0.0",
   "description": "A browser package.",
   "keywords": [

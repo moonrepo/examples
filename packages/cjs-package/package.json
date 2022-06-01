@@ -1,5 +1,5 @@
 {
-  "name": "cjs-package",
+  "name": "@company/cjs-package",
   "version": "0.0.0",
   "type": "commonjs",
   "description": "A Node.js CJS package.",

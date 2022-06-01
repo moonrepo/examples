@@ -1,5 +1,5 @@
 {
-  "name": "mjs-package",
+  "name": "@company/mjs-package",
   "version": "0.0.0",
   "type": "module",
   "description": "A Node.js MJS package.",
