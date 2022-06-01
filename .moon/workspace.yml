@@ -8,6 +8,7 @@ projects:
   browser-package: 'packages/browser-package'
   cjs-package: 'packages/cjs-package'
   mjs-package: 'packages/mjs-package'
+  nextjs-app: 'apps/nextjs-app'
   node-package: 'packages/node-package'
 
 # OPTIONAL: Configures Node.js within the toolchain. moon manages its own version of Node.js

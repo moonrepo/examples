@@ -1,5 +1,5 @@
 {
-  "name": "node-package",
+  "name": "@company/node-package",
   "version": "0.0.0",
   "description": "A Node.js package.",
   "keywords": [

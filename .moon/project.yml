@@ -41,6 +41,7 @@ fileGroups:
 # This setting requires a map, where the key is a unique name for the task,
 # and the value is an object of task parameters.
 tasks:
+  # https://moonrepo.dev/docs/guides/examples/packemon
   buildPackage:
     command: 'packemon'
     args:
@@ -59,6 +60,7 @@ tasks:
     env:
       NODE_ENV: 'production'
 
+  # https://moonrepo.dev/docs/guides/examples/prettier
   format:
     command: 'prettier'
     args:
