@@ -6,6 +6,9 @@
       "path": "apps/nextjs-app"
     },
     {
+      "path": "apps/remix-app"
+    },
+    {
       "path": "packages/browser-package"
     },
     {

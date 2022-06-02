@@ -1,5 +1,5 @@
 {
-  "name": "remix-template-remix",
+  "name": "@apps/remix",
   "private": true,
   "sideEffects": false,
   "scripts": {

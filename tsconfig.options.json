@@ -2,6 +2,7 @@
 {
   "extends": "tsconfig-beemo/tsconfig.json",
   "compilerOptions": {
+    "allowJs": true,
     "moduleResolution": "nodenext",
     "target": "es2022"
   }
