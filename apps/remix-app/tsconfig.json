@@ -1,0 +1,26 @@
+{
+  "extends": "../../tsconfig.projectOptions.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "emitDeclarationOnly": false,
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "noEmit": true,
+    "outDir": "../../.moon/dts/apps/remix-app",
+    "paths": {
+      "~/*": [
+        "./app/*"
+      ]
+    }
+  },
+  "include": [
+    "remix.env.d.ts",
+    "**/*"
+  ],
+  "exclude": [
+    ".cache",
+    "build",
+    "public"
+  ]
+}

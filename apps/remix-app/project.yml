@@ -1,0 +1,18 @@
+workspace:
+  inheritedTasks:
+    exclude: [buildPackage]
+
+tasks:
+  build:
+    command: remix
+    args: build
+  dev:
+    command: remix
+    args: dev
+    options:
+      runInCI: false
+  start:
+    command: remix-serve
+    args: build
+    options:
+      runInCI: false

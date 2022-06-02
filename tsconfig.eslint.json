@@ -5,6 +5,7 @@
     "packages/**/*"
   ],
   "exclude": [
+    "**/.cache/**/*",
     "**/.next/**/*",
     "**/build/**/*",
     "**/cjs/**/*",
