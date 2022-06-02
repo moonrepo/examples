@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.projectOptions.json",
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./app/*"]
+    },
+  },
+  "include": ["remix.env.d.ts", "**/*.ts", "**/*.tsx"],
+}

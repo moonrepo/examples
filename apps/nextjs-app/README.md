@@ -1,1 +1,3 @@
-This is a starter template for [Learn Next.js](https://nextjs.org/learn).
+# Next.js
+
+A basic Next.js application powered by moon.
