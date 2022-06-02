@@ -1,3 +1,5 @@
+/* eslint-disable sort-keys */
+
 // https://www.npmjs.com/package/eslint-config-beemo
 module.exports = {
 	root: true,
@@ -21,4 +23,20 @@ module.exports = {
 		// We need to keep "index" around in imports for extensions
 		'import/no-useless-path-segments': 'off',
 	},
+	overrides: [
+		{
+			files: ['apps/**/*'],
+			rules: {
+				// App pages require default exports
+				'import/no-default-export': 'off',
+			},
+		},
+		{
+			files: ['*.config.js', '.eslintrc.js'],
+			rules: {
+				'import/no-commonjs': 'off',
+				'unicorn/prefer-module': 'off',
+			},
+		},
+	],
 };
