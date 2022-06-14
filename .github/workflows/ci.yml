@@ -14,4 +14,4 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
       - run: npm ci
-      - run: npm run moon ci
+      - run: npm run moon --color ci
