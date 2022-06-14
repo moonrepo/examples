@@ -3,7 +3,7 @@
   "name": "moon-examples",
   "infra": "monorepo",
   "scripts": {
-    "moon": "moon --log trace"
+    "moon": "moon --color --log trace"
   },
   "workspaces": [
     "apps/*",
