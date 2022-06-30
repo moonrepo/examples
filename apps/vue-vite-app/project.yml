@@ -56,7 +56,12 @@ tasks:
 
   typecheck:
     command: 'vue-tsc'
-    args: '--noEmit --project tsconfig.vitest.json --composite false'
+    args:
+      - '--noEmit'
+      - '--project'
+      - 'tsconfig.vitest.json'
+      - '--composite'
+      - 'false'
     inputs:
       - 'env.d.ts'
       - 'src/**/*'
