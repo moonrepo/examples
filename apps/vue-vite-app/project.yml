@@ -2,10 +2,9 @@ type: application
 
 workspace:
   inheritedTasks:
-    exclude: [buildPackage, test]
+    exclude: [buildPackage, test, typecheck]
 
 tasks:
-  # Development server
   dev:
     command: 'vite'
     args: 'dev'
@@ -17,7 +16,6 @@ tasks:
     options:
       runInCI: false
 
-  # Production build
   build:
     command: 'vite'
     args: 'build'
@@ -29,7 +27,6 @@ tasks:
     outputs:
       - 'dist'
 
-  # Preview production build locally
   preview:
     command: 'vite'
     args: 'preview --port 4173'
@@ -43,19 +40,26 @@ tasks:
     options:
       runInCI: false
 
-  # Unit testing (if using Vitest)
   test:
     command: 'vitest'
     args:
       - 'run'
       - '--environment'
       - 'jsdom'
-      # Always run code coverage
       - '--coverage'
-      # Dont fail if a project has no tests
       - '--passWithNoTests'
     inputs:
       - 'src/**/*'
       - 'tests/**/*'
       - 'vite.config.*'
       - 'vitest.config.*'
+
+  typecheck:
+    command: 'vue-tsc'
+    args: '--noEmit'
+    inputs:
+      - 'env.d.ts'
+      - 'src/**/*'
+      - 'tests/**/*'
+      - 'tsconfig.json'
+      - 'tsconfig.*.json'
