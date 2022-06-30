@@ -9,6 +9,9 @@
       "path": "apps/remix-app"
     },
     {
+      "path": "apps/vue-vite-app"
+    },
+    {
       "path": "packages/browser-package"
     },
     {

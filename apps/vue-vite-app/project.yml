@@ -1,0 +1,76 @@
+type: application
+
+workspace:
+  inheritedTasks:
+    exclude: [buildPackage, test, typecheck]
+
+tasks:
+  dev:
+    command: 'vite'
+    args: 'dev'
+    inputs:
+      - 'src/**/*'
+      - 'env.d.ts'
+      - 'index.html'
+      - 'vite.config.*'
+    options:
+      runInCI: false
+
+  build:
+    command: 'vite'
+    args: 'build'
+    inputs:
+      - 'src/**/*'
+      - 'env.d.ts'
+      - 'index.html'
+      - 'vite.config.*'
+    outputs:
+      - 'dist'
+
+  preview:
+    command: 'vite'
+    args: 'preview --port 4173'
+    inputs:
+      - 'src/**/*'
+      - 'env.d.ts'
+      - 'index.html'
+      - 'vite.config.*'
+    deps:
+      - '~:build'
+    options:
+      runInCI: false
+
+  test:
+    command: 'vitest'
+    args:
+      - 'run'
+      - '--environment'
+      - 'jsdom'
+      - '--coverage'
+      - '--passWithNoTests'
+    inputs:
+      - 'src/**/*'
+      - 'tests/**/*'
+      - 'vite.config.*'
+      - 'vitest.config.*'
+
+  typecheck:
+    command: 'vue-tsc'
+    args:
+      - '--noEmit'
+      - '--project'
+      - 'tsconfig.vitest.json'
+      - '--composite'
+      - 'false'
+    inputs:
+      - 'env.d.ts'
+      - 'src/**/*'
+      - 'tests/**/*'
+      - 'tsconfig.json'
+      - 'tsconfig.*.json'
+
+  # Extends the top-level lint
+  lint:
+    args:
+      - '--ext'
+      - '.js,.ts,.vue'

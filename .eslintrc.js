@@ -34,6 +34,7 @@ module.exports = {
 		{
 			files: ['*.config.js', '.eslintrc.js'],
 			rules: {
+				'sort-keys': 'off',
 				'import/no-commonjs': 'off',
 				'unicorn/prefer-module': 'off',
 			},
