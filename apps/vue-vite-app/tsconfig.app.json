@@ -1,6 +1,9 @@
 {
   "extends": "@vue/tsconfig/tsconfig.web.json",
   "include": [
+    ".eslintrc.js",
+    "vite.config.*",
+    "vitest.config.*",
     "env.d.ts",
     "src/**/*",
     "src/**/*.vue"

@@ -56,10 +56,16 @@ tasks:
 
   typecheck:
     command: 'vue-tsc'
-    args: '--noEmit'
+    args: '--noEmit --project tsconfig.vitest.json --composite false'
     inputs:
       - 'env.d.ts'
       - 'src/**/*'
       - 'tests/**/*'
       - 'tsconfig.json'
       - 'tsconfig.*.json'
+
+  # Extends the top-level lint
+  lint:
+    args:
+      - '--ext'
+      - '.js,.ts,.vue'

@@ -16,3 +16,6 @@ umd/
 *.min.js
 *.map
 *.snap
+
+# Vue files are formatted via ESLint
+*.vue
