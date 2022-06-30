@@ -9,7 +9,6 @@ logs/
 .vscode
 
 # Directories
-assets/
 build/
 coverage/
 cjs/

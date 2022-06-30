@@ -1,0 +1,61 @@
+type: application
+
+workspace:
+  inheritedTasks:
+    exclude: [buildPackage, test]
+
+tasks:
+  # Development server
+  dev:
+    command: 'vite'
+    args: 'dev'
+    inputs:
+      - 'src/**/*'
+      - 'env.d.ts'
+      - 'index.html'
+      - 'vite.config.*'
+    options:
+      runInCI: false
+
+  # Production build
+  build:
+    command: 'vite'
+    args: 'build'
+    inputs:
+      - 'src/**/*'
+      - 'env.d.ts'
+      - 'index.html'
+      - 'vite.config.*'
+    outputs:
+      - 'dist'
+
+  # Preview production build locally
+  preview:
+    command: 'vite'
+    args: 'preview --port 4173'
+    inputs:
+      - 'src/**/*'
+      - 'env.d.ts'
+      - 'index.html'
+      - 'vite.config.*'
+    deps:
+      - '~:build'
+    options:
+      runInCI: false
+
+  # Unit testing (if using Vitest)
+  test:
+    command: 'vitest'
+    args:
+      - 'run'
+      - '--environment'
+      - 'jsdom'
+      # Always run code coverage
+      - '--coverage'
+      # Dont fail if a project has no tests
+      - '--passWithNoTests'
+    inputs:
+      - 'src/**/*'
+      - 'tests/**/*'
+      - 'vite.config.*'
+      - 'vitest.config.*'
