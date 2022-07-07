@@ -4,15 +4,19 @@ workspace:
   inheritedTasks:
     exclude: [buildPackage, test, typecheck]
 
+fileGroups:
+  vite:
+    - 'src/**/*'
+    - 'env.d.ts'
+    - 'index.html'
+    - 'vite.config.*'
+
 tasks:
   dev:
     command: 'vite'
     args: 'dev'
     inputs:
-      - 'src/**/*'
-      - 'env.d.ts'
-      - 'index.html'
-      - 'vite.config.*'
+      - '@group(vite)'
     options:
       runInCI: false
 
@@ -20,10 +24,7 @@ tasks:
     command: 'vite'
     args: 'build'
     inputs:
-      - 'src/**/*'
-      - 'env.d.ts'
-      - 'index.html'
-      - 'vite.config.*'
+      - '@group(vite)'
     outputs:
       - 'dist'
 
@@ -31,10 +32,7 @@ tasks:
     command: 'vite'
     args: 'preview --port 4173'
     inputs:
-      - 'src/**/*'
-      - 'env.d.ts'
-      - 'index.html'
-      - 'vite.config.*'
+      - '@group(vite)'
     deps:
       - '~:build'
     options:
@@ -49,9 +47,8 @@ tasks:
       - '--coverage'
       - '--passWithNoTests'
     inputs:
-      - 'src/**/*'
+      - '@group(vite)'
       - 'tests/**/*'
-      - 'vite.config.*'
       - 'vitest.config.*'
 
   typecheck:
@@ -63,8 +60,7 @@ tasks:
       - '--composite'
       - 'false'
     inputs:
-      - 'env.d.ts'
-      - 'src/**/*'
+      - '@group(vite)'
       - 'tests/**/*'
       - 'tsconfig.json'
       - 'tsconfig.*.json'
