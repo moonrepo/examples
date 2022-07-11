@@ -13,11 +13,13 @@ projects:
 
 node:
   version: '18.5.0'
-  packageManager: 'npm'
+  packageManager: 'pnpm'
   addEnginesConstraint: true
   dedupeOnLockfileChange: true
   syncProjectWorkspaceDependencies: true
   syncVersionManagerConfig: 'nvm'
+  pnpm:
+    version: '7.5.0'
 
 typescript:
   projectConfigFileName: 'tsconfig.json'
