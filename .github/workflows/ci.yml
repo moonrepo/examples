@@ -13,4 +13,4 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
-      - run: npx @moonrepo/cli ci
+      - run: npx @moonrepo/cli ci -- --color --log trace
