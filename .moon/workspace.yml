@@ -10,7 +10,7 @@ projects:
   vue-vite-app: 'apps/vue-vite-app'
 
 node:
-  version: '18.0.0'
+  version: '18.5.0'
   packageManager: 'npm'
   addEnginesConstraint: true
   dedupeOnLockfileChange: true
