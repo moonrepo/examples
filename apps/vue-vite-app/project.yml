@@ -10,6 +10,7 @@ fileGroups:
     - 'env.d.ts'
     - 'index.html'
     - 'vite.config.*'
+    - 'package.json'
 
 tasks:
   dev:
