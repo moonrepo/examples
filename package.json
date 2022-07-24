@@ -11,6 +11,7 @@
   ],
   "devDependencies": {
     "@moonrepo/cli": "^0.8.0",
+    "@swc/core": "^1.2.218",
     "@types/jest": "^28.1.6",
     "@types/node": "^18.0.6",
     "babel-preset-beemo": "^2.0.0",
