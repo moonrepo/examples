@@ -21,13 +21,13 @@ tasks:
 
   export:
     command: 'next'
-    args: 'export -o ./dist'
+    args: 'export -o ./build'
     deps:
       - '~:build'
     inputs:
       - '@group(next)'
     outputs:
-      - 'dist'
+      - 'build'
 
   dev:
     command: 'next'
