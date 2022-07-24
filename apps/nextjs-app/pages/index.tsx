@@ -49,6 +49,7 @@ export default function Home() {
 					target="_blank"
 					rel="noopener noreferrer"
 				>
+					{/* eslint-disable-next-line @next/next/no-img-element */}
 					Powered by <img src="/vercel.svg" alt="Vercel" className="logo" />
 				</a>
 			</footer>
