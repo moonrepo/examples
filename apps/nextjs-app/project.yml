@@ -4,17 +4,43 @@ workspace:
   inheritedTasks:
     exclude: [buildPackage]
 
+fileGroups:
+  next:
+    - 'pages/**/*'
+    - 'public/**/*'
+    - 'src/**/*'
+    - 'next-env.d.ts'
+    - 'next.config.*'
+
 tasks:
   build:
-    command: next
-    args: build
+    command: 'next'
+    args: 'build'
+    inputs:
+      - '@group(next)'
+
+  export:
+    command: 'next'
+    args: 'export -o ./dist'
+    deps:
+      - '~:build'
+    inputs:
+      - '@group(next)'
+    outputs:
+      - 'dist'
+
   dev:
-    command: next
-    args: dev
+    command: 'next'
+    args: 'dev'
+    inputs:
+      - '@group(next)'
     options:
       runInCI: false
+
   start:
-    command: next
-    args: start
+    command: 'next'
+    args: 'start'
+    inputs:
+      - '@group(next)'
     options:
       runInCI: false
