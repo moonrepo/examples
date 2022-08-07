@@ -1,20 +1,39 @@
-type: application
+type: 'application'
 
 workspace:
   inheritedTasks:
-    exclude: [buildPackage]
+    exclude: ['buildPackage']
+
+fileGroups:
+  remix:
+    - 'app/**/*'
+    - 'public/**/*'
+    - 'remix.env.d.ts'
+    - 'remix.config.*'
 
 tasks:
   build:
-    command: remix
-    args: build
+    command: 'remix'
+    args: 'build'
+    inputs:
+      - '@group(remix)'
+    outputs:
+      - 'build'
+
   dev:
-    command: remix
-    args: dev
+    command: 'remix'
+    args: 'dev'
+    inputs:
+      - '@group(remix)'
     options:
       runInCI: false
+
   start:
-    command: remix-serve
-    args: build
+    command: 'remix-serve'
+    args: './build'
+    deps:
+      - '~:build'
+    inputs:
+      - '@group(remix)'
     options:
       runInCI: false
