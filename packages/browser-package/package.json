@@ -33,7 +33,8 @@
       "types": "./dts/index.d.ts",
       "browser": {
         "module": "./esm/index.js",
-        "import": "./esm/index.js"
+        "import": "./esm/index.js",
+        "default": "./lib/index.js"
       },
       "default": "./lib/index.js"
     }
