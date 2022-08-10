@@ -1,12 +1,11 @@
-type: library
+type: 'library'
 
 tasks:
   build:
     outputs:
-      - esm
-      - lib
+      - 'lib'
 
 workspace:
   inheritedTasks:
     rename:
-      buildPackage: build
+      buildPackage: 'build'

@@ -3,6 +3,7 @@
   "name": "moon-examples",
   "infra": "monorepo",
   "scripts": {
+    "deps": "npx npm-check-updates --deep --interactive",
     "moon": "moon --color --log trace"
   },
   "workspaces": [

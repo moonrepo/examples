@@ -1,8 +1,8 @@
-type: application
+type: 'application'
 
 workspace:
   inheritedTasks:
-    exclude: [buildPackage]
+    exclude: ['buildPackage']
 
 fileGroups:
   next:
