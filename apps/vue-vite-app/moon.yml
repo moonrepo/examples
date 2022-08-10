@@ -1,8 +1,8 @@
-type: application
+type: 'application'
 
 workspace:
   inheritedTasks:
-    exclude: [buildPackage, test, typecheck]
+    exclude: ['buildPackage', 'test', 'typecheck']
 
 fileGroups:
   vite:

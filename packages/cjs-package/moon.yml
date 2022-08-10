@@ -1,13 +1,13 @@
-type: library
+type: 'library'
 
 tasks:
   build:
     outputs:
-      - cjs
+      - 'cjs'
 
 workspace:
   inheritedTasks:
     # Jest/Babel don't support .cts yet
-    exclude: [test]
+    exclude: ['test']
     rename:
-      buildPackage: build
+      buildPackage: 'build'
