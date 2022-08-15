@@ -18,8 +18,7 @@ tasks:
     args: 'dev'
     inputs:
       - '@group(vite)'
-    options:
-      runInCI: false
+    local: true
 
   build:
     command: 'vite'
@@ -36,8 +35,7 @@ tasks:
       - '@group(vite)'
     deps:
       - '~:build'
-    options:
-      runInCI: false
+    local: true
 
   test:
     command: 'vitest'
