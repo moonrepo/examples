@@ -34,13 +34,11 @@ tasks:
     args: 'dev'
     inputs:
       - '@group(next)'
-    options:
-      runInCI: false
+    local: true
 
   start:
     command: 'next'
     args: 'start'
     inputs:
       - '@group(next)'
-    options:
-      runInCI: false
+    local: true
