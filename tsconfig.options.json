@@ -1,6 +1,6 @@
-// https://www.npmjs.com/package/tsconfig-beemo
+// https://www.npmjs.com/package/tsconfig-moon
 {
-  "extends": "tsconfig-beemo/tsconfig.json",
+  "extends": "tsconfig-moon/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
     "moduleResolution": "nodenext",

@@ -1,6 +1,4 @@
-/* eslint-disable sort-keys */
-
-// https://www.npmjs.com/package/eslint-config-beemo
+// https://www.npmjs.com/package/eslint-config-moon
 module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
@@ -9,12 +7,14 @@ module.exports = {
 		tsconfigRootDir: __dirname,
 	},
 	extends: [
-		'beemo',
-		'beemo/node',
+		'moon',
+		'moon/node',
 		// Uncomment when targeting browsers
-		// 'beemo/browser',
-		// Uncomment if using React/JSX
-		// 'beemo/react',
+		// 'moon/browser',
+		// Uncomment if using React
+		// 'moon/react',
+		// Uncomment if using Solid
+		// 'moon/solid',
 	],
 	rules: {
 		// Doesn't understand the new TS 4.7 imports

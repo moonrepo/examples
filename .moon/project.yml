@@ -85,7 +85,7 @@ tasks:
     args:
       - '--passWithNoTests'
       - '--preset'
-      - 'jest-preset-beemo'
+      - 'jest-preset-moon'
     inputs:
       - '@globs(sources)'
       - '@globs(tests)'
