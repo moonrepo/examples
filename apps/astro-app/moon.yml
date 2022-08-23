@@ -46,3 +46,8 @@ tasks:
     deps:
       - '~:build'
     local: true
+
+  lint:
+      args:
+          - '--ext'
+          - '.ts,.tsx,.astro'
