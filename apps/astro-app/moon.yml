@@ -35,6 +35,8 @@ tasks:
     args: 'check'
     inputs:
       - '@group(astro)'
+    deps:
+      - '~:typecheck'
 
   preview:
     command: 'astro'

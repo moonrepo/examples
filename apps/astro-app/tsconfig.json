@@ -1,15 +1,9 @@
 {
-  "extends": "../../tsconfig.projectOptions.json",
+  "extends": "../../tsconfig.options.json",
   "compilerOptions": {
-    "emitDeclarationOnly": false,
+    "importsNotUsedAsValues": "error",
+    "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": true
-  },
-  "include": [
-    "**/*",
-    "astro.config.mjs"
-  ],
-  "exclude": [
-    "dist"
-  ]
+  }
 }
