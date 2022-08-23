@@ -14,7 +14,7 @@ fileGroups:
 
 tasks:
   build:
-    command: 'next 'build'
+    command: 'next build'
     inputs:
       - '@group(next)'
 
