@@ -15,7 +15,7 @@ module.exports = {
 				// `Astro.props` is typed with any
 				'@typescript-eslint/no-unsafe-assignment': 'off',
 				'@typescript-eslint/no-unsafe-member-access': 'off',
-			}
+			},
 		},
 	],
 };

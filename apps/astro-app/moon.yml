@@ -48,6 +48,6 @@ tasks:
     local: true
 
   lint:
-      args:
-          - '--ext'
-          - '.ts,.tsx,.astro'
+    args:
+      - '--ext'
+      - '.ts,.tsx,.astro'
