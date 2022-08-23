@@ -1,0 +1,53 @@
+type: 'application'
+
+workspace:
+  inheritedTasks:
+    exclude: ['buildPackage']
+
+fileGroups:
+  astro:
+    - 'src/**/*'
+    - 'astro.config.*'
+    - 'package.json'
+
+tasks:
+  astro:
+    command: 'astro'
+    local: true
+
+  dev:
+    command: 'astro'
+    args: 'dev'
+    inputs:
+      - '@group(astro)'
+    local: true
+
+  build:
+    command: 'astro'
+    args: 'build'
+    inputs:
+      - '@group(astro)'
+    outputs:
+      - 'dist'
+
+  check:
+    command: 'astro'
+    args: 'check'
+    inputs:
+      - '@group(astro)'
+    deps:
+      - '~:typecheck'
+
+  preview:
+    command: 'astro'
+    args: 'preview'
+    inputs:
+      - '@group(astro)'
+    deps:
+      - '~:build'
+    local: true
+
+  lint:
+    args:
+      - '--ext'
+      - '.ts,.tsx,.astro'

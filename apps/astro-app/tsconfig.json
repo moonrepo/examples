@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.options.json",
+  "compilerOptions": {
+    "importsNotUsedAsValues": "error",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "noEmit": true
+  }
+}
