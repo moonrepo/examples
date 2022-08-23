@@ -4,5 +4,8 @@
   "private": true,
   "dependencies": {
     "astro": "^1.0.6"
+  },
+  "devDependencies": {
+    "prettier-plugin-astro": "^0.5.1"
   }
 }
