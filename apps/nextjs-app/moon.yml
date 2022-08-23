@@ -14,14 +14,12 @@ fileGroups:
 
 tasks:
   build:
-    command: 'next'
-    args: 'build'
+    command: 'next 'build'
     inputs:
       - '@group(next)'
 
   export:
-    command: 'next'
-    args: 'export -o ./build'
+    command: 'next export -o ./build'
     deps:
       - '~:build'
     inputs:
@@ -30,15 +28,13 @@ tasks:
       - 'build'
 
   dev:
-    command: 'next'
-    args: 'dev'
+    command: 'next dev'
     inputs:
       - '@group(next)'
     local: true
 
   start:
-    command: 'next'
-    args: 'start'
+    command: 'next start'
     inputs:
       - '@group(next)'
     local: true

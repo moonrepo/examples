@@ -20,8 +20,8 @@ fileGroups:
 tasks:
   # https://moonrepo.dev/docs/guides/examples/packemon
   buildPackage:
-    command: 'packemon'
-    args:
+    command:
+      - 'packemon'
       - 'pack'
       - '--addEngines'
       - '--addExports'
@@ -39,8 +39,8 @@ tasks:
 
   # https://moonrepo.dev/docs/guides/examples/prettier
   format:
-    command: 'prettier'
-    args:
+    command:
+      - 'prettier'
       - '--config'
       - '@in(5)'
       - '--ignore-path'
@@ -57,8 +57,8 @@ tasks:
 
   # https://moonrepo.dev/docs/guides/examples/eslint
   lint:
-    command: 'eslint'
-    args:
+    command:
+      - 'eslint'
       - '--ext'
       - '.ts,.tsx,.cts,.mts,.js,.jsx,.cjs,.mjs'
       - '--fix'
@@ -81,8 +81,8 @@ tasks:
 
   # https://moonrepo.dev/docs/guides/examples/jest
   test:
-    command: 'jest'
-    args:
+    command:
+      - 'jest'
       - '--passWithNoTests'
       - '--preset'
       - 'jest-preset-moon'
@@ -93,8 +93,8 @@ tasks:
 
   # https://moonrepo.dev/docs/guides/examples/typescript
   typecheck:
-    command: 'tsc'
-    args:
+    command:
+      - 'tsc'
       - '--build'
       - '--verbose'
     inputs:

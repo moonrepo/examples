@@ -13,23 +13,20 @@ fileGroups:
 
 tasks:
   build:
-    command: 'remix'
-    args: 'build'
+    command: 'remix build'
     inputs:
       - '@group(remix)'
     outputs:
       - 'build'
 
   dev:
-    command: 'remix'
-    args: 'dev'
+    command: 'remix dev'
     inputs:
       - '@group(remix)'
     local: true
 
   start:
-    command: 'remix-serve'
-    args: './build'
+    command: 'remix-serve ./build'
     deps:
       - '~:build'
     inputs:
