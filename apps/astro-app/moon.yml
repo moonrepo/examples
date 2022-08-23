@@ -16,37 +16,34 @@ tasks:
     local: true
 
   dev:
-    command: 'astro'
-    args: 'dev'
+    command: 'astro dev'
     inputs:
       - '@group(astro)'
     local: true
 
   build:
-    command: 'astro'
-    args: 'build'
+    command: 'astro build'
     inputs:
       - '@group(astro)'
     outputs:
       - 'dist'
 
   check:
-    command: 'astro'
-    args: 'check'
+    command: 'astro check'
     inputs:
       - '@group(astro)'
     deps:
       - '~:typecheck'
 
   preview:
-    command: 'astro'
-    args: 'preview'
+    command: 'astro preview'
     inputs:
       - '@group(astro)'
     deps:
       - '~:build'
     local: true
 
+  # Extends the top-level lint
   lint:
     args:
       - '--ext'

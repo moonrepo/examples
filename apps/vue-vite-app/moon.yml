@@ -14,23 +14,20 @@ fileGroups:
 
 tasks:
   dev:
-    command: 'vite'
-    args: 'dev'
+    command: 'vite dev'
     inputs:
       - '@group(vite)'
     local: true
 
   build:
-    command: 'vite'
-    args: 'build'
+    command: 'vite build'
     inputs:
       - '@group(vite)'
     outputs:
       - 'dist'
 
   preview:
-    command: 'vite'
-    args: 'preview --port 4173'
+    command: 'vite preview --port 4173'
     inputs:
       - '@group(vite)'
     deps:
@@ -38,8 +35,8 @@ tasks:
     local: true
 
   test:
-    command: 'vitest'
-    args:
+    command:
+      - 'vitest'
       - 'run'
       - '--environment'
       - 'jsdom'
@@ -51,8 +48,8 @@ tasks:
       - 'vitest.config.*'
 
   typecheck:
-    command: 'vue-tsc'
-    args:
+    command:
+      - 'vue-tsc'
       - '--noEmit'
       - '--project'
       - 'tsconfig.vitest.json'
