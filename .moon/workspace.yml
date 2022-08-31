@@ -29,5 +29,5 @@ vcs:
   manager: 'git'
   defaultBranch: 'master'
 
-actionRunner:
+runner:
   logRunningCommand: true
