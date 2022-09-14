@@ -15,3 +15,6 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm ci
       - run: npm run moon -- ci
+      - uses: moonrepo/run-report-action@v1
+        with:
+          access-token: ${{ secrets.GITHUB_TOKEN }}

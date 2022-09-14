@@ -2,13 +2,13 @@
   "name": "@apps/nextjs-app",
   "private": true,
   "dependencies": {
-    "next": "^12.2.5",
+    "next": "^12.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
     "@types/react": "^17.0.47",
     "@types/react-dom": "^17.0.17",
-    "eslint-config-next": "^12.2.5"
+    "eslint-config-next": "^12.3.0"
   }
 }
