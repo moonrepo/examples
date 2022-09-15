@@ -6,8 +6,8 @@
     "baseUrl": ".",
     "emitDeclarationOnly": false,
     "jsx": "react-jsx",
-    "resolveJsonModule": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "noEmit": true,
     "paths": {
       "~/*": [

@@ -4,7 +4,6 @@
     "outDir": "../../.moon/cache/types/apps/astro-app",
     "rootDir": ".",
     "importsNotUsedAsValues": "error",
-    "moduleResolution": "node",
     "resolveJsonModule": true
   },
   "include": [

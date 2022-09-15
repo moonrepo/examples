@@ -6,10 +6,16 @@
     "emitDeclarationOnly": false,
     "incremental": true,
     "jsx": "preserve",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "noEmit": true
   },
   "include": [
+    ".eslintrc.js",
+    "next-env.d.ts",
     "pages/**/*"
+  ],
+  "exclude": [
+    "node_modules"
   ],
   "references": []
 }
