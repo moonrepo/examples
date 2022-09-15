@@ -1,15 +1,12 @@
 {
   "extends": "../../tsconfig.projectOptions.json",
   "compilerOptions": {
-    "outDir": "../../.moon/dts/packages/cjs-package",
+    "outDir": "../../.moon/cache/types/packages/cjs-package",
     "rootDir": "."
   },
   "include": [
-    "**/*"
-  ],
-  "exclude": [
-    "cjs",
-    "dts"
+    "src/**/*",
+    "tests/**/*"
   ],
   "references": []
 }

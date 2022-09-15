@@ -1,20 +1,15 @@
 {
   "extends": "../../tsconfig.projectOptions.json",
   "compilerOptions": {
+    "outDir": "../../.moon/cache/types/apps/nextjs-app",
+    "rootDir": ".",
     "emitDeclarationOnly": false,
     "incremental": true,
     "jsx": "preserve",
-    "noEmit": true,
-    "outDir": "../../.moon/dts/apps/nextjs-app",
-    "resolveJsonModule": true,
-    "rootDir": "."
+    "resolveJsonModule": true
   },
   "include": [
-    "**/*"
-  ],
-  "exclude": [
-    ".next",
-    "build"
+    "pages/**/*"
   ],
   "references": []
 }

@@ -1,15 +1,12 @@
 {
   "extends": "../../tsconfig.projectOptions.json",
   "compilerOptions": {
-    "outDir": "../../.moon/dts/packages/node-package",
+    "outDir": "../../.moon/cache/types/packages/node-package",
     "rootDir": "."
   },
   "include": [
-    "**/*"
-  ],
-  "exclude": [
-    "dts",
-    "lib"
+    "src/**/*",
+    "tests/**/*"
   ],
   "references": []
 }
