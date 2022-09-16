@@ -1,6 +1,11 @@
 import Head from 'next/head';
+import { add } from '@company/browser-package';
 
 export default function Home() {
+	// Testing imports of local workspace packages
+	// eslint-disable-next-line no-console
+	console.log(add(1, 1));
+
 	return (
 		<div className="container">
 			<Head>

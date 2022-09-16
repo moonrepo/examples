@@ -1,15 +1,12 @@
 {
   "extends": "../../tsconfig.projectOptions.json",
   "compilerOptions": {
-    "outDir": "../../.moon/dts/packages/mjs-package",
+    "outDir": "../../.moon/cache/types/packages/mjs-package",
     "rootDir": "."
   },
   "include": [
-    "**/*"
-  ],
-  "exclude": [
-    "dts",
-    "mjs"
+    "src/**/*",
+    "tests/**/*"
   ],
   "references": []
 }

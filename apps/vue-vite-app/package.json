@@ -2,6 +2,7 @@
   "name": "@apps/vue-vite-app",
   "private": true,
   "dependencies": {
+    "@company/browser-package": "*",
     "vue": "^3.2.39",
     "vue-router": "^4.1.5"
   },

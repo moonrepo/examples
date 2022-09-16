@@ -1,13 +1,14 @@
 {
   "extends": "../../tsconfig.projectOptions.json",
   "compilerOptions": {
+    "outDir": "../../.moon/cache/types/apps/remix-app",
+    "rootDir": ".",
     "baseUrl": ".",
     "emitDeclarationOnly": false,
     "jsx": "react-jsx",
-    "resolveJsonModule": true,
     "moduleResolution": "node",
+    "resolveJsonModule": true,
     "noEmit": true,
-    "outDir": "../../.moon/dts/apps/remix-app",
     "paths": {
       "~/*": [
         "./app/*"
@@ -16,12 +17,13 @@
   },
   "include": [
     ".eslintrc.js",
+    "remix.config.js",
     "remix.env.d.ts",
-    "**/*"
+    "app/**/*"
   ],
-  "exclude": [
-    ".cache",
-    "build",
-    "public"
+  "references": [
+    {
+      "path": "../../packages/browser-package"
+    }
   ]
 }

@@ -1,7 +1,12 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router';
+import { add } from '@company/browser-package';
 
 import HelloWorld from '@/components/HelloWorld.vue';
+
+// Testing imports of local workspace packages
+// eslint-disable-next-line no-console
+console.log(add(1, 1));
 </script>
 
 <template>
