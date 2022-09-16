@@ -17,12 +17,16 @@ tasks:
 
   dev:
     command: 'astro dev'
+    deps:
+      - '^:build'
     inputs:
       - '@group(astro)'
     local: true
 
   build:
     command: 'astro build'
+    deps:
+      - '^:build'
     inputs:
       - '@group(astro)'
     outputs:

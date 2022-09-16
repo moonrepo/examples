@@ -28,6 +28,8 @@ tasks:
       - '--declaration'
       - '--declarationConfig'
       - 'tsconfig.build.json'
+    deps:
+      - '^:build'
     inputs:
       - '@globs(sources)'
       - 'package.json'
@@ -68,6 +70,8 @@ tasks:
       - '--ignore-path'
       - '@in(4)'
       - '.'
+    deps:
+      - '^:build'
     inputs:
       - '@globs(sources)'
       - '@globs(tests)'
@@ -86,6 +90,8 @@ tasks:
       - '--passWithNoTests'
       - '--preset'
       - 'jest-preset-moon'
+    deps:
+      - '^:build'
     inputs:
       - '@globs(sources)'
       - '@globs(tests)'
@@ -98,7 +104,7 @@ tasks:
       - '--build'
       - '--verbose'
     deps:
-      - '^:build' # Build dependent types
+      - '^:build'
     inputs:
       - '@globs(sources)'
       - '@globs(tests)'
