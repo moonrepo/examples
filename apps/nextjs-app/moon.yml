@@ -15,6 +15,8 @@ fileGroups:
 tasks:
   build:
     command: 'next build'
+    deps:
+      - '^:build'
     inputs:
       - '@group(next)'
 
@@ -29,6 +31,8 @@ tasks:
 
   dev:
     command: 'next dev'
+    deps:
+      - '^:build'
     inputs:
       - '@group(next)'
     local: true

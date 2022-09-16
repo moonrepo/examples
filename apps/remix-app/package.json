@@ -3,6 +3,7 @@
   "private": true,
   "sideEffects": false,
   "dependencies": {
+    "@company/browser-package": "*",
     "@remix-run/node": "^1.7.0",
     "@remix-run/react": "^1.7.0",
     "@remix-run/serve": "^1.7.0",

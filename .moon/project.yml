@@ -97,6 +97,8 @@ tasks:
       - 'tsc'
       - '--build'
       - '--verbose'
+    deps:
+      - '^:build' # Build dependent types
     inputs:
       - '@globs(sources)'
       - '@globs(tests)'

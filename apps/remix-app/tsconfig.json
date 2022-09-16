@@ -20,5 +20,9 @@
     "remix.env.d.ts",
     "app/**/*"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "../../packages/browser-package"
+    }
+  ]
 }

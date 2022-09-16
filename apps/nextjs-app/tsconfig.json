@@ -17,5 +17,9 @@
   "exclude": [
     "node_modules"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "../../packages/browser-package"
+    }
+  ]
 }

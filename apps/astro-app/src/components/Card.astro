@@ -8,6 +8,13 @@ export interface Props {
 const { href, title, body } = Astro.props as Props;
 ---
 
+<script>
+	import { add } from '@company/browser-package';
+
+	// Testing imports of local workspace packages
+	console.log(add(1, 1));
+</script>
+
 <li class="link-card">
 	<a href={href}>
 		<h2>
@@ -19,6 +26,7 @@ const { href, title, body } = Astro.props as Props;
 		</p>
 	</a>
 </li>
+
 <style>
 	:root {
 		--link-gradient: linear-gradient(45deg, #4f39fa, #da62c4 30%, var(--color-border) 60%);

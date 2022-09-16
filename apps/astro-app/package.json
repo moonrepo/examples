@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
+    "@company/browser-package": "*",
     "astro": "^1.2.3"
   },
   "devDependencies": {
