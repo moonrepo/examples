@@ -5,6 +5,9 @@ workspace:
     exclude: ['buildPackage']
 
 fileGroups:
+  sources:
+    - 'pages/**/*'
+    - 'types/**/*'
   next:
     - 'pages/**/*'
     - 'public/**/*'

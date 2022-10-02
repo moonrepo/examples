@@ -5,6 +5,9 @@ workspace:
     exclude: ['buildPackage']
 
 fileGroups:
+  sources:
+    - 'app/**/*'
+    - 'types/**/*'
   remix:
     - 'app/**/*'
     - 'public/**/*'
