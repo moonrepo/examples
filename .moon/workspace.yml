@@ -23,6 +23,7 @@ node:
 typescript:
   projectConfigFileName: 'tsconfig.json'
   rootConfigFileName: 'tsconfig.json'
+  routeOutDirToCache: true
   syncProjectReferences: true
 
 vcs:
@@ -31,3 +32,5 @@ vcs:
 
 runner:
   logRunningCommand: true
+  implicitDeps:
+    - '^:build'

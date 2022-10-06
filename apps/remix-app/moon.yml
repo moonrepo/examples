@@ -17,8 +17,6 @@ fileGroups:
 tasks:
   build:
     command: 'remix build'
-    deps:
-      - '^:build'
     inputs:
       - '@group(remix)'
     outputs:
@@ -26,8 +24,6 @@ tasks:
 
   dev:
     command: 'remix dev'
-    deps:
-      - '^:build'
     inputs:
       - '@group(remix)'
     local: true

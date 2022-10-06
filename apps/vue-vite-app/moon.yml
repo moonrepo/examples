@@ -3,6 +3,7 @@ type: 'application'
 workspace:
   inheritedTasks:
     exclude: ['buildPackage', 'test', 'typecheck']
+  typescript: false
 
 fileGroups:
   vite:
@@ -15,16 +16,12 @@ fileGroups:
 tasks:
   dev:
     command: 'vite dev'
-    deps:
-      - '^:build'
     inputs:
       - '@group(vite)'
     local: true
 
   build:
     command: 'vite build'
-    deps:
-      - '^:build'
     inputs:
       - '@group(vite)'
     outputs:
