@@ -16,16 +16,12 @@ fileGroups:
 tasks:
   dev:
     command: 'vite dev'
-    deps:
-      - '^:build'
     inputs:
       - '@group(vite)'
     local: true
 
   build:
     command: 'vite build'
-    deps:
-      - '^:build'
     inputs:
       - '@group(vite)'
     outputs:
