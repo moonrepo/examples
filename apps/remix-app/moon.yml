@@ -31,7 +31,7 @@ tasks:
   start:
     command: 'remix-serve ./build'
     deps:
-      - '~:build'
+      - 'build'
     inputs:
       - '@group(remix)'
     local: true

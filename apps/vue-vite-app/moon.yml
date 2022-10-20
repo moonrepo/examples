@@ -32,7 +32,7 @@ tasks:
     inputs:
       - '@group(vite)'
     deps:
-      - '~:build'
+      - 'build'
     local: true
 
   test:

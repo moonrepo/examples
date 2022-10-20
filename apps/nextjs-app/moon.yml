@@ -24,7 +24,7 @@ tasks:
   export:
     command: 'next export -o ./build'
     deps:
-      - '~:build'
+      - 'build'
     inputs:
       - '@group(next)'
     outputs:

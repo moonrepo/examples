@@ -33,14 +33,14 @@ tasks:
     inputs:
       - '@group(astro)'
     deps:
-      - '~:typecheck'
+      - 'typecheck'
 
   preview:
     command: 'astro preview'
     inputs:
       - '@group(astro)'
     deps:
-      - '~:build'
+      - 'build'
     local: true
 
   # Extends the top-level lint
