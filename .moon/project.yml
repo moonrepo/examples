@@ -1,9 +1,12 @@
 $schema: 'https://moonrepo.dev/schemas/global-project.json'
 
 fileGroups:
+  # Application specific files
+  app: []
   configs:
     - '*.{js,json,yml,yaml}'
   sources:
+    - 'public/**/*'
     - 'src/**/*'
     - 'types/**/*'
   tests:
@@ -41,19 +44,18 @@ tasks:
   format:
     command:
       - 'prettier'
-      - '--config'
-      - '@in(5)'
       - '--ignore-path'
-      - '@in(4)'
+      - '@in(0)'
       - '--check'
       - '.'
     inputs:
+      - '/.prettierignore'
+      - '/prettier.config.js'
+      - '@group(app)'
       - '@globs(sources)'
       - '@globs(tests)'
       - '@globs(configs)'
       - '**/*.{md,mdx}'
-      - '/.prettierignore'
-      - '/prettier.config.js'
 
   # https://moonrepo.dev/docs/guides/examples/eslint
   lint:
@@ -66,11 +68,9 @@ tasks:
       - '--no-error-on-unmatched-pattern'
       - '--exit-on-fatal-error'
       - '--ignore-path'
-      - '@in(4)'
+      - '@in(2)'
       - '.'
     inputs:
-      - '@globs(sources)'
-      - '@globs(tests)'
       - '*.config.*'
       - '**/.eslintrc.*'
       - '/.eslintignore'
@@ -78,6 +78,9 @@ tasks:
       - 'tsconfig.json'
       - '/tsconfig.eslint.json'
       - '/tsconfig.options.json'
+      - '@group(app)'
+      - '@globs(sources)'
+      - '@globs(tests)'
 
   # https://moonrepo.dev/docs/guides/examples/jest
   test:
@@ -98,6 +101,7 @@ tasks:
       - '--build'
       - '--verbose'
     inputs:
+      - '@group(app)'
       - '@globs(sources)'
       - '@globs(tests)'
       - 'tsconfig.json'

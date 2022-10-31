@@ -6,31 +6,26 @@ workspace:
   typescript: false
 
 fileGroups:
-  vite:
-    - 'src/**/*'
+  app:
     - 'env.d.ts'
     - 'index.html'
     - 'vite.config.*'
-    - 'package.json'
 
 tasks:
   dev:
     command: 'vite dev'
-    inputs:
-      - '@group(vite)'
     local: true
 
   build:
     command: 'vite build'
     inputs:
-      - '@group(vite)'
+      - '@group(app)'
+      - '@group(sources)'
     outputs:
       - 'dist'
 
   preview:
     command: 'vite preview --port 4173'
-    inputs:
-      - '@group(vite)'
     deps:
       - 'build'
     local: true
@@ -44,7 +39,8 @@ tasks:
       - '--coverage'
       - '--passWithNoTests'
     inputs:
-      - '@group(vite)'
+      - '@group(sources)'
+      - '@group(tests)'
       - 'tests/**/*'
       - 'vitest.config.*'
 
@@ -57,7 +53,7 @@ tasks:
       - '--composite'
       - 'false'
     inputs:
-      - '@group(vite)'
+      - '@group(sources)'
       - 'tests/**/*'
       - 'tsconfig.json'
       - 'tsconfig.*.json'

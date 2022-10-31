@@ -5,13 +5,8 @@ workspace:
     exclude: ['buildPackage']
 
 fileGroups:
-  sources:
+  app:
     - 'pages/**/*'
-    - 'types/**/*'
-  next:
-    - 'pages/**/*'
-    - 'public/**/*'
-    - 'src/**/*'
     - 'next-env.d.ts'
     - 'next.config.*'
 
@@ -19,25 +14,23 @@ tasks:
   build:
     command: 'next build'
     inputs:
-      - '@group(next)'
+      - '@group(app)'
+      - '@group(sources)'
 
   export:
     command: 'next export -o ./build'
     deps:
       - 'build'
     inputs:
-      - '@group(next)'
+      - '@group(app)'
+      - '@group(sources)'
     outputs:
       - 'build'
 
   dev:
     command: 'next dev'
-    inputs:
-      - '@group(next)'
     local: true
 
   start:
     command: 'next start'
-    inputs:
-      - '@group(next)'
     local: true

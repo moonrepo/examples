@@ -9,6 +9,9 @@
       "path": "apps/nextjs-app"
     },
     {
+      "path": "apps/nuxt-app"
+    },
+    {
       "path": "apps/remix-app"
     },
     {

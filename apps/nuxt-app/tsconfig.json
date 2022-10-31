@@ -1,0 +1,12 @@
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../.moon/cache/types/apps/nuxt-app"
+  },
+  "include": [
+    ".nuxt/nuxt.d.ts",
+    "**/*.vue",
+    ".eslintrc.js",
+    "nuxt.config.ts"
+  ]
+}

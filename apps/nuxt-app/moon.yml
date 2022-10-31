@@ -1,0 +1,71 @@
+type: 'application'
+
+workspace:
+  inheritedTasks:
+    exclude: ['buildPackage', 'typecheck']
+
+fileGroups:
+  app:
+    - '.nuxtignore'
+    - 'app.config.*'
+    - 'nuxt.config.*'
+  sources:
+    - 'assets/**/*'
+    - 'components/**/*'
+    - 'composables/**/*'
+    - 'content/**/*'
+    - 'layouts/**/*'
+    - 'middleware/**/*'
+    - 'pages/**/*'
+    - 'plugins/**/*'
+    - 'server/**/*'
+    - 'app.vue'
+
+tasks:
+  nuxt:
+    command: 'nuxt'
+    local: true
+
+  build:
+    command: 'nuxt build'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+    outputs:
+      - '.output'
+
+  dev:
+    command: 'nuxt dev'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+    local: true
+
+  preview:
+    command: 'nuxt preview'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+    deps:
+      - 'build'
+    local: true
+
+  typecheck:
+    command:
+      - 'vue-tsc'
+      - '--noEmit'
+      # - '--project'
+      # - 'tsconfig.vitest.json'
+      # - '--composite'
+      # - 'false'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+      - 'tsconfig.json'
+      - 'tsconfig.*.json'
+
+  # Extends the top-level lint
+  lint:
+    args:
+      - '--ext'
+      - '.ts,.vue'
