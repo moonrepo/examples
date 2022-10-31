@@ -68,12 +68,9 @@ tasks:
       - '--no-error-on-unmatched-pattern'
       - '--exit-on-fatal-error'
       - '--ignore-path'
-      - '@in(4)'
+      - '@in(2)'
       - '.'
     inputs:
-      - '@group(app)'
-      - '@globs(sources)'
-      - '@globs(tests)'
       - '*.config.*'
       - '**/.eslintrc.*'
       - '/.eslintignore'
@@ -81,6 +78,9 @@ tasks:
       - 'tsconfig.json'
       - '/tsconfig.eslint.json'
       - '/tsconfig.options.json'
+      - '@group(app)'
+      - '@globs(sources)'
+      - '@globs(tests)'
 
   # https://moonrepo.dev/docs/guides/examples/jest
   test:

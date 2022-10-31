@@ -2,5 +2,13 @@
   "extends": "./.nuxt/tsconfig.json",
   "compilerOptions": {
     "outDir": "../../.moon/cache/types/apps/nuxt-app"
-  }
+  },
+  "include": [
+    "**/*.vue",
+    ".eslintrc.js",
+    "nuxt.config.ts"
+  ],
+  "exclude": [
+    ".nuxt"
+  ]
 }

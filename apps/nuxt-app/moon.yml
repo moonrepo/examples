@@ -49,3 +49,9 @@ tasks:
     deps:
       - 'build'
     local: true
+
+  # Extends the top-level lint
+  lint:
+    args:
+      - '--ext'
+      - '.ts,.vue'
