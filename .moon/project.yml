@@ -41,8 +41,6 @@ tasks:
   format:
     command:
       - 'prettier'
-      - '--config'
-      - '@in(5)'
       - '--ignore-path'
       - '@in(4)'
       - '--check'
