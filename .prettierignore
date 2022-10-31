@@ -1,5 +1,4 @@
 .cache/
-.next/
 node_modules/
 build/
 cjs/
@@ -19,3 +18,10 @@ umd/
 
 # Vue files are formatted via ESLint
 *.vue
+
+# Next
+.next/
+
+# Nuxt
+.nuxt/
+.output/

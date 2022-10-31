@@ -5,10 +5,8 @@ workspace:
     exclude: ['buildPackage']
 
 fileGroups:
-  astro:
-    - 'src/**/*'
+  app:
     - 'astro.config.*'
-    - 'package.json'
 
 tasks:
   astro:
@@ -17,28 +15,26 @@ tasks:
 
   dev:
     command: 'astro dev'
-    inputs:
-      - '@group(astro)'
     local: true
 
   build:
     command: 'astro build'
     inputs:
-      - '@group(astro)'
+      - '@group(app)'
+      - '@group(sources)'
     outputs:
       - 'dist'
 
   check:
     command: 'astro check'
     inputs:
-      - '@group(astro)'
+      - '@group(app)'
+      - '@group(sources)'
     deps:
       - 'typecheck'
 
   preview:
     command: 'astro preview'
-    inputs:
-      - '@group(astro)'
     deps:
       - 'build'
     local: true

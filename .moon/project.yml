@@ -1,10 +1,12 @@
 $schema: 'https://moonrepo.dev/schemas/global-project.json'
 
 fileGroups:
+  # Application specific files
   app: []
   configs:
     - '*.{js,json,yml,yaml}'
   sources:
+    - 'public/**/*'
     - 'src/**/*'
     - 'types/**/*'
   tests:
@@ -43,17 +45,17 @@ tasks:
     command:
       - 'prettier'
       - '--ignore-path'
-      - '@in(4)'
+      - '@in(0)'
       - '--check'
       - '.'
     inputs:
+      - '/.prettierignore'
+      - '/prettier.config.js'
       - '@group(app)'
       - '@globs(sources)'
       - '@globs(tests)'
       - '@globs(configs)'
       - '**/*.{md,mdx}'
-      - '/.prettierignore'
-      - '/prettier.config.js'
 
   # https://moonrepo.dev/docs/guides/examples/eslint
   lint:

@@ -22,6 +22,10 @@ fileGroups:
     - 'app.vue'
 
 tasks:
+  nuxt:
+    command: 'nuxt'
+    local: true
+
   build:
     command: 'nuxt build'
     inputs:

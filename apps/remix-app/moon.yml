@@ -5,33 +5,29 @@ workspace:
     exclude: ['buildPackage']
 
 fileGroups:
-  sources:
-    - 'app/**/*'
-    - 'types/**/*'
-  remix:
-    - 'app/**/*'
-    - 'public/**/*'
+  app:
     - 'remix.env.d.ts'
     - 'remix.config.*'
+  sources:
+    - 'app/**/*'
+    - 'public/**/*'
+    - 'types/**/*'
 
 tasks:
   build:
     command: 'remix build'
     inputs:
-      - '@group(remix)'
+      - '@group(app)'
+      - '@group(sources)'
     outputs:
       - 'build'
 
   dev:
     command: 'remix dev'
-    inputs:
-      - '@group(remix)'
     local: true
 
   start:
     command: 'remix-serve ./build'
     deps:
       - 'build'
-    inputs:
-      - '@group(remix)'
     local: true
