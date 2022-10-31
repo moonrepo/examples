@@ -1,6 +1,7 @@
 $schema: 'https://moonrepo.dev/schemas/global-project.json'
 
 fileGroups:
+  app: []
   configs:
     - '*.{js,json,yml,yaml}'
   sources:
@@ -46,6 +47,7 @@ tasks:
       - '--check'
       - '.'
     inputs:
+      - '@group(app)'
       - '@globs(sources)'
       - '@globs(tests)'
       - '@globs(configs)'
@@ -67,6 +69,7 @@ tasks:
       - '@in(4)'
       - '.'
     inputs:
+      - '@group(app)'
       - '@globs(sources)'
       - '@globs(tests)'
       - '*.config.*'
@@ -96,6 +99,7 @@ tasks:
       - '--build'
       - '--verbose'
     inputs:
+      - '@group(app)'
       - '@globs(sources)'
       - '@globs(tests)'
       - 'tsconfig.json'
