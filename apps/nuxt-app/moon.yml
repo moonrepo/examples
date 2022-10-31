@@ -2,7 +2,7 @@ type: 'application'
 
 workspace:
   inheritedTasks:
-    exclude: ['buildPackage']
+    exclude: ['buildPackage', 'typecheck']
 
 fileGroups:
   app:
@@ -49,6 +49,20 @@ tasks:
     deps:
       - 'build'
     local: true
+
+  typecheck:
+    command:
+      - 'vue-tsc'
+      - '--noEmit'
+      # - '--project'
+      # - 'tsconfig.vitest.json'
+      # - '--composite'
+      # - 'false'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+      - 'tsconfig.json'
+      - 'tsconfig.*.json'
 
   # Extends the top-level lint
   lint:
