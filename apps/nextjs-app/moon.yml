@@ -25,6 +25,7 @@ tasks:
       - '@group(app)'
       - '@group(sources)'
     outputs:
+      - '.next'
       - 'build'
 
   dev:
