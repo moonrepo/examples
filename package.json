@@ -12,7 +12,7 @@
   ],
   "devDependencies": {
     "@moonrepo/cli": "^0.19.0",
-    "@swc/core": "^1.3.16",
+    "@swc/core": "^1.3.18",
     "@types/jest": "^29.2.3",
     "@types/node": "^18.11.9",
     "babel-preset-moon": "^1.1.2",
