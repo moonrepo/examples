@@ -13,8 +13,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
-        with:
-          cache: pnpm
+      - run: npm install -g pnpm
       - run: pnpm install
       - run: pnpm run moon -- ci
         env:
