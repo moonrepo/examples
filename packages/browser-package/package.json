@@ -38,8 +38,5 @@
       },
       "default": "./lib/index.js"
     }
-  },
-  "devDependencies": {
-    "packemon": "^2.4.1"
   }
 }
