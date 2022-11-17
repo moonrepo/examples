@@ -15,7 +15,7 @@ jobs:
       - uses: actions/setup-node@v3
       - run: npm install -g pnpm
       - run: pnpm install
-      - run: pnpm run moon -- ci
+      - run: pnpm run moon ci
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}
           MOONBASE_API_KEY: ${{ secrets.MOONBASE_API_KEY }}
