@@ -1,12 +1,15 @@
 {
-  "extends": "../../tsconfig.projectOptions.json",
+  "extends": "../../tsconfig.options.json",
   "compilerOptions": {
-    "outDir": "../../.moon/cache/types/packages/cjs-package",
-    "rootDir": "."
+    "outDir": "../../.moon/cache/types/packages/cjs-package"
   },
   "include": [
     "src/**/*",
     "tests/**/*"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
+    }
+  ]
 }

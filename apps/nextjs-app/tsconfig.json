@@ -1,8 +1,7 @@
 {
-  "extends": "../../tsconfig.projectOptions.json",
+  "extends": "../../tsconfig.options.json",
   "compilerOptions": {
     "outDir": "../../.moon/cache/types/apps/nextjs-app",
-    "rootDir": ".",
     "emitDeclarationOnly": false,
     "incremental": true,
     "jsx": "preserve",

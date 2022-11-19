@@ -1,12 +1,15 @@
 {
-  "extends": "../../tsconfig.projectOptions.json",
+  "extends": "../../tsconfig.options.json",
   "compilerOptions": {
-    "outDir": "../../.moon/cache/types/packages/browser-package",
-    "rootDir": "."
+    "outDir": "../../.moon/cache/types/packages/browser-package"
   },
   "include": [
     "src/**/*",
     "tests/**/*"
   ],
-  "references": []
+  "references": [
+    {
+      "path": "./tsconfig.build.json"
+    }
+  ]
 }

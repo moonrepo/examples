@@ -1,8 +1,7 @@
 {
-  "extends": "../../tsconfig.projectOptions.json",
+  "extends": "../../tsconfig.options.json",
   "compilerOptions": {
     "outDir": "../../.moon/cache/types/apps/remix-app",
-    "rootDir": ".",
     "baseUrl": ".",
     "emitDeclarationOnly": false,
     "jsx": "react-jsx",
