@@ -1,4 +1,7 @@
 {
+  "compilerOptions": {
+    "outDir": "../../.moon/cache/types/apps/vue-vite-app"
+  },
   "files": [],
   "references": [
     {
