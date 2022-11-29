@@ -3,6 +3,8 @@ type: 'application'
 workspace:
   inheritedTasks:
     exclude: ['buildPackage', 'test', 'typecheck']
+
+toolchain:
   typescript: false
 
 fileGroups:
