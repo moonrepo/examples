@@ -1,0 +1,44 @@
+type: "application"
+language: "typescript"
+
+fileGroups:
+  svelte:
+    - "src/**/*"
+    - "static/**/*"
+    - "svelte.config.*"
+    - "vite.config.*"
+
+tasks:
+  dev:
+    command: "vite dev"
+    local: true
+
+  lint:
+    command: "eslint ."
+
+  # Production build (SSR)
+  build:
+    command: "vite build"
+    deps:
+      - "~:lint"
+    inputs:
+      - "@group(svelte)"
+    outputs:
+      - ".svelte-kit"
+
+  preview:
+    command: "vite preview"
+    local: true
+    deps:
+      - "build"
+
+  test:
+    command: "vitest"
+    inputs:
+      - "@globs(sources)"
+      - "@globs(tests)"
+
+  playwright:
+    command: "playwright test"
+    inputs:
+      - "@globs(tests)"
