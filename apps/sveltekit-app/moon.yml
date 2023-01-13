@@ -1,6 +1,10 @@
 type: "application"
 language: "typescript"
 
+workspace:
+  inheritedTasks:
+    exclude: ["test"]
+
 fileGroups:
   svelte:
     - "src/**/*"
