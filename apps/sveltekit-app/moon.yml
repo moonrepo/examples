@@ -1,48 +1,48 @@
-type: "application"
-language: "typescript"
+type: 'application'
+language: 'typescript'
 
 workspace:
   inheritedTasks:
-    exclude: ["test"]
+    exclude: ['test']
 
 fileGroups:
   svelte:
-    - "src/**/*"
-    - "static/**/*"
-    - "svelte.config.*"
-    - "vite.config.*"
+    - 'src/**/*'
+    - 'static/**/*'
+    - 'svelte.config.*'
+    - 'vite.config.*'
 
 tasks:
   dev:
-    command: "vite dev"
+    command: 'vite dev'
     local: true
 
   lint:
-    command: "eslint ."
+    command: 'eslint .'
 
   # Production build (SSR)
   build:
-    command: "vite build"
+    command: 'vite build'
     deps:
-      - "~:lint"
+      - '~:lint'
     inputs:
-      - "@group(svelte)"
+      - '@group(svelte)'
     outputs:
-      - ".svelte-kit"
+      - '.svelte-kit'
 
   preview:
-    command: "vite preview"
+    command: 'vite preview'
     local: true
     deps:
-      - "build"
+      - 'build'
 
   test:
-    command: "vitest"
+    command: 'vitest'
     inputs:
-      - "@globs(sources)"
-      - "@globs(tests)"
+      - '@globs(sources)'
+      - '@globs(tests)'
 
   playwright:
-    command: "playwright test"
+    command: 'playwright test'
     inputs:
-      - "@globs(tests)"
+      - '@globs(tests)'
