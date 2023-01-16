@@ -5,8 +5,8 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "eslint-plugin-vue": "^9.8.0",
+    "eslint-plugin-vue": "^9.9.0",
     "nuxt": "3.0.0",
-    "vue-tsc": "^1.0.14"
+    "vue-tsc": "^1.0.24"
   }
 }
