@@ -19,5 +19,3 @@ vcs:
 
 runner:
   logRunningCommand: true
-  implicitDeps:
-    - '^:build'

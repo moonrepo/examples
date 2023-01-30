@@ -1,4 +1,7 @@
-$schema: 'https://moonrepo.dev/schemas/global-project.json'
+$schema: 'https://moonrepo.dev/schemas/tasks.json'
+
+implicitDeps:
+  - '^:build'
 
 fileGroups:
   # Application specific files
