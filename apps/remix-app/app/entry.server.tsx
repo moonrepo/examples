@@ -8,6 +8,7 @@ export default function handleRequest(
 	responseHeaders: Headers,
 	remixContext: EntryContext,
 ) {
+	// @ts-expect-error Mistyped
 	const markup = renderToString(<RemixServer context={remixContext} url={request.url} />);
 
 	responseHeaders.set('Content-Type', 'text/html');

@@ -1,4 +1,4 @@
-# Trigger CI: 9
+# Trigger CI: 10
 
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
@@ -19,5 +19,3 @@ vcs:
 
 runner:
   logRunningCommand: true
-  implicitDeps:
-    - '^:build'

@@ -2,7 +2,7 @@ type: 'application'
 
 workspace:
   inheritedTasks:
-    exclude: ['buildPackage', 'typecheck']
+    exclude: ['typecheck']
 
 fileGroups:
   app:
