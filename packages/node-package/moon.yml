@@ -4,8 +4,3 @@ tasks:
   build:
     outputs:
       - 'lib'
-
-workspace:
-  inheritedTasks:
-    rename:
-      buildPackage: 'build'

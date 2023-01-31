@@ -1,9 +1,5 @@
 type: 'application'
 
-workspace:
-  inheritedTasks:
-    exclude: ['buildPackage']
-
 fileGroups:
   app:
     - 'remix.env.d.ts'
