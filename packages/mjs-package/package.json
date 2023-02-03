@@ -18,27 +18,26 @@
     }
   },
   "engines": {
-    "node": ">=14.15.0",
+    "node": ">=16.12.0",
     "npm": ">=6.14.0"
   },
   "files": [
-    "dts/**/*.d.mts",
-    "mjs/**/*.{mjs,map}",
-    "src/**/*.{mts,json}"
+    "mjs/**/*",
+    "src/**/*"
   ],
-  "types": "./dts/index.d.mts",
+  "types": "./mjs/index.d.mts",
   "main": "./mjs/index.mjs",
   "exports": {
     "./package.json": "./package.json",
     "./*": {
-      "types": "./dts/*.d.mts",
       "node": {
+        "types": "./mjs/*.d.ts",
         "import": "./mjs/*.mjs"
       }
     },
     ".": {
-      "types": "./dts/index.d.mts",
       "node": {
+        "types": "./mjs/index.d.mts",
         "import": "./mjs/index.mjs"
       }
     }

@@ -1,4 +1,4 @@
-# Trigger CI: 10
+# Trigger CI: 12
 
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
@@ -20,4 +20,9 @@ vcs:
   defaultBranch: 'master'
 
 runner:
+  archivableTargets:
+    - ':format'
+    - ':lint'
+    - ':test'
+    - ':typecheck'
   logRunningCommand: true

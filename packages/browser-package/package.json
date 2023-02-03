@@ -11,27 +11,28 @@
   "license": "MIT",
   "repository": "https://github.com/moonrepo/examples",
   "packemon": {
-    "format": "esm",
+    "format": [
+      "lib",
+      "esm"
+    ],
     "platform": "browser"
   },
   "engines": {
-    "node": ">=14.15.0",
-    "npm": ">=6.14.0"
+    "node": ">=14.15.0"
   },
   "files": [
-    "dts/**/*.d.ts",
-    "esm/**/*.{js,map}",
-    "lib/**/*.{js,map}",
-    "src/**/*.{ts,tsx,json}"
+    "esm/**/*",
+    "lib/**/*",
+    "src/**/*"
   ],
   "main": "./lib/index.js",
   "module": "./esm/index.js",
-  "types": "./dts/index.d.ts",
+  "types": "./lib/index.d.ts",
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./dts/index.d.ts",
       "browser": {
+        "types": "./esm/index.d.ts",
         "module": "./esm/index.js",
         "import": "./esm/index.js",
         "default": "./lib/index.js"
