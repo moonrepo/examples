@@ -9,7 +9,10 @@
   ],
   "references": [
     {
-      "path": "./tsconfig.build.json"
+      "path": "./tsconfig.esm.json"
+    },
+    {
+      "path": "./tsconfig.lib.json"
     }
   ]
 }

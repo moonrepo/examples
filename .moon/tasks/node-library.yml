@@ -9,13 +9,7 @@ tasks:
       - '--addEngines'
       - '--addExports'
       - '--declaration'
-      - '--declarationConfig'
-      - 'tsconfig.build.json'
     inputs:
       - '@globs(sources)'
       - 'package.json'
-      - 'tsconfig.build.json'
-    outputs:
-      - 'dts'
-    env:
-      NODE_ENV: 'production'
+      - 'tsconfig.*.json'
