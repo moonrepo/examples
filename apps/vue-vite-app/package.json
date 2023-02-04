@@ -2,7 +2,7 @@
   "name": "@apps/vue-vite-app",
   "private": true,
   "dependencies": {
-    "@company/browser-package": "*",
+    "@company/browser-package": "workspace:*",
     "vue": "^3.2.47",
     "vue-router": "^4.1.6"
   },

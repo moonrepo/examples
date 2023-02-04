@@ -36,7 +36,7 @@ importers:
 
   apps/astro-app:
     specifiers:
-      '@company/browser-package': '*'
+      '@company/browser-package': workspace:*
       astro: ^2.0.6
       eslint-plugin-astro: ^0.23.0
       prettier-plugin-astro: ^0.8.0
@@ -49,7 +49,7 @@ importers:
 
   apps/nextjs-app:
     specifiers:
-      '@company/browser-package': '*'
+      '@company/browser-package': workspace:*
       '@types/react': ^17.0.47
       '@types/react-dom': ^17.0.17
       eslint-config-next: ^12.3.1
@@ -78,7 +78,7 @@ importers:
 
   apps/remix-app:
     specifiers:
-      '@company/browser-package': '*'
+      '@company/browser-package': workspace:*
       '@remix-run/dev': ^1.12.0
       '@remix-run/eslint-config': ^1.12.0
       '@remix-run/node': ^1.12.0
@@ -103,7 +103,7 @@ importers:
 
   apps/vue-vite-app:
     specifiers:
-      '@company/browser-package': '*'
+      '@company/browser-package': workspace:*
       '@types/jsdom': ^20.0.1
       '@vitejs/plugin-vue': ^4.0.0
       '@vitejs/plugin-vue-jsx': ^3.0.0
