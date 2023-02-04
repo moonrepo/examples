@@ -4178,7 +4178,7 @@ packages:
       '@babel/plugin-syntax-typescript': 7.20.0_@babel+core@7.20.12
       '@vanilla-extract/babel-plugin-debug-ids': 1.0.1
       '@vanilla-extract/css': 1.9.3
-      esbuild: 0.16.3
+      esbuild: 0.16.17
       eval: 0.1.6
       find-up: 5.0.0
       javascript-stringify: 2.1.0
@@ -7938,7 +7938,7 @@ packages:
       '@types/glob': 7.2.0
       array-union: 2.1.0
       dir-glob: 3.0.1
-      fast-glob: 3.2.11
+      fast-glob: 3.2.12
       glob: 7.2.3
       ignore: 5.2.4
       merge2: 1.4.1

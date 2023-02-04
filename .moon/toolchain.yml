@@ -9,6 +9,7 @@ node:
     version: '7.26.3'
   addEnginesConstraint: true
   dedupeOnLockfileChange: true
+  dependencyVersionFormat: 'workspace'
   syncProjectWorkspaceDependencies: true
   syncVersionManagerConfig: 'nvm'
 
