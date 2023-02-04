@@ -12,12 +12,10 @@ jobs:
       - uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - run: git remote get-url origin
       - uses: actions/setup-node@v3
-        with:
-          cache: npm
-      - run: npm ci
-      - run: npm run moon -- ci
+      - run: npm install -g pnpm
+      - run: pnpm install
+      - run: pnpm run moon ci
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}
           MOONBASE_ACCESS_KEY: ${{ secrets.MOONBASE_ACCESS_KEY }}

@@ -3,6 +3,7 @@
   "extends": "tsconfig-moon/tsconfig.json",
   "compilerOptions": {
     "allowJs": true,
+    "lib": ["esnext", "dom"],
     "moduleResolution": "nodenext",
     "target": "es2022",
     "composite": true,

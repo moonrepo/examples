@@ -24,11 +24,7 @@ The following frameworks have been integrated into moon.
 
 ### Usage
 
-To begin, we suggest installing moon globally with npm.
-
-```
-npm install -g @moonrepo/cli
-```
+To begin, we suggest installing moon globally: https://moonrepo.dev/docs/install
 
 Once installed, run the following commands for common tasks:
 
