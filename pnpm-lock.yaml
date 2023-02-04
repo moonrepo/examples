@@ -70,10 +70,12 @@ importers:
     specifiers:
       eslint-plugin-vue: ^9.9.0
       nuxt: 3.1.2
+      vue: ^3.2.47
       vue-tsc: ^1.0.24
     devDependencies:
       eslint-plugin-vue: 9.9.0_eslint@8.33.0
       nuxt: 3.1.2_ndavlr5gomle5zzyx7eljktc5u
+      vue: 3.2.47
       vue-tsc: 1.0.24_typescript@4.9.5
 
   apps/remix-app:
