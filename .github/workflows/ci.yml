@@ -13,9 +13,8 @@ jobs:
         with:
           fetch-depth: 0
       - uses: actions/setup-node@v3
-      - run: npm install -g pnpm
-      - run: pnpm install
-      - run: pnpm run moon ci
+      - uses: moonrepo/setup-moon-action@v0
+      - run: moon ci
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}
           MOONBASE_ACCESS_KEY: ${{ secrets.MOONBASE_ACCESS_KEY }}
