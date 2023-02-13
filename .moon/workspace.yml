@@ -1,8 +1,8 @@
-# Trigger CI: 12
+# Trigger CI: 13
 
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
-versionConstraint: '>=0.23.0'
+versionConstraint: '>=0.24.0'
 
 projects:
   astro-app: 'apps/astro-app'
