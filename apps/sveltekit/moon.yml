@@ -2,7 +2,7 @@ type: 'application'
 
 workspace:
   inheritedTasks:
-    exclude: ['test']
+    exclude: ['test', 'typecheck']
 
 fileGroups:
   app:
@@ -40,6 +40,19 @@ tasks:
       - '@group(tests)'
       - 'tests/**/*'
       - 'vitest.config.*'
+
+  typecheck-sync:
+    command: 'svelte-kit sync'
+
+  typecheck:
+    command: 'svelte-check --tsconfig ./tsconfig.json'
+    deps:
+      - 'typecheck-sync'
+    inputs:
+      - '@group(app)'
+      - '@globs(sources)'
+      - '@globs(tests)'
+      - 'tsconfig.json'
 
   # Extends the top-level lint
   lint:

@@ -1,4 +1,4 @@
-import { allowed,words } from './words.server';
+import { allowed, words } from './words.server';
 
 export class Game {
 	index: number;
@@ -38,7 +38,7 @@ export class Game {
 		this.guesses[this.answers.length] = word;
 
 		const available = [...this.answer];
-		const answer = Array.from({length: 5}).fill('_');
+		const answer = Array.from({ length: 5 }).fill('_');
 
 		// first, find exact matches
 		for (let i = 0; i < 5; i += 1) {
