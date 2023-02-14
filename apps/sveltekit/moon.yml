@@ -1,0 +1,61 @@
+type: 'application'
+
+workspace:
+  inheritedTasks:
+    exclude: ['test', 'typecheck']
+
+fileGroups:
+  app:
+    - 'static/**/*'
+    - 'svelte.config.*'
+    - 'vite.config.*'
+
+tasks:
+  dev:
+    command: 'vite dev'
+    local: true
+
+  build:
+    command: 'vite build'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+    outputs:
+      - '.svelte-kit'
+
+  preview:
+    command: 'vite preview'
+    deps:
+      - 'build'
+    local: true
+
+  test:
+    command:
+      - 'vitest'
+      - 'run'
+      - '--coverage'
+      - '--passWithNoTests'
+    inputs:
+      - '@group(sources)'
+      - '@group(tests)'
+      - 'tests/**/*'
+      - 'vitest.config.*'
+
+  typecheck-sync:
+    command: 'svelte-kit sync'
+
+  typecheck:
+    command: 'svelte-check --tsconfig ./tsconfig.json'
+    deps:
+      - 'typecheck-sync'
+    inputs:
+      - '@group(app)'
+      - '@globs(sources)'
+      - '@globs(tests)'
+      - 'tsconfig.json'
+
+  # Extends the top-level lint
+  lint:
+    args:
+      - '--ext'
+      - '.ts,.svelte'

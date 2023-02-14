@@ -20,6 +20,7 @@ The following frameworks have been integrated into moon.
 - [Next](./apps/nextjs-app/README.md)
 - [Nuxt](./apps/nuxt-app/README.md)
 - [Remix](./apps/remix-app/README.md)
+- [SvelteKit](./apps/sveltekit/README.md)
 - [Vue + Vite + Vitest](./apps/vue-vite-app/README.md)
 
 ### Usage

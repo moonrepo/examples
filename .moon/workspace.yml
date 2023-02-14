@@ -13,6 +13,7 @@ projects:
   nuxt-app: 'apps/nuxt-app'
   node-package: 'packages/node-package'
   remix-app: 'apps/remix-app'
+  sveltekit: 'apps/sveltekit'
   vue-vite-app: 'apps/vue-vite-app'
 
 vcs:
