@@ -1,1 +1,24 @@
 type: 'application'
+
+workspace:
+  inheritedTasks:
+    exclude: ['test']
+
+fileGroups:
+  app:
+    - 'static/**/*'
+    - 'svelte.config.*'
+    - 'vite.config.*'
+
+tasks:
+  test:
+    command:
+      - 'vitest'
+      - 'run'
+      - '--coverage'
+      - '--passWithNoTests'
+    inputs:
+      - '@group(sources)'
+      - '@group(tests)'
+      - 'tests/**/*'
+      - 'vitest.config.*'
