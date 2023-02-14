@@ -1,6 +1,9 @@
+.DS_Store
+
 .cache/
 .next/
 .svelte-kit/
+
 node_modules/
 build/
 cjs/
@@ -17,3 +20,7 @@ umd/
 *.min.js
 *.map
 *.snap
+
+pnpm-lock.yaml
+package-lock.json
+yarn.lock

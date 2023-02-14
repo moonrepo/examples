@@ -1,5 +1,6 @@
-import { sveltekit } from '@sveltejs/kit/vite';
+// eslint-disable-next-line node/no-unpublished-import
 import { defineConfig } from 'vitest/config';
+import { sveltekit } from '@sveltejs/kit/vite';
 
 export default defineConfig({
 	plugins: [sveltekit()],

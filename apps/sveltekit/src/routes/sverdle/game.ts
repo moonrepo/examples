@@ -1,4 +1,4 @@
-import { words, allowed } from './words.server';
+import { allowed,words } from './words.server';
 
 export class Game {
 	index: number;
@@ -13,7 +13,7 @@ export class Game {
 		if (serialized) {
 			const [index, guesses, answers] = serialized.split('-');
 
-			this.index = +index;
+			this.index = Number(index);
 			this.guesses = guesses ? guesses.split(' ') : [];
 			this.answers = answers ? answers.split(' ') : [];
 		} else {
@@ -37,8 +37,8 @@ export class Game {
 
 		this.guesses[this.answers.length] = word;
 
-		const available = Array.from(this.answer);
-		const answer = Array(5).fill('_');
+		const available = [...this.answer];
+		const answer = Array.from({length: 5}).fill('_');
 
 		// first, find exact matches
 		for (let i = 0; i < 5; i += 1) {

@@ -22,3 +22,9 @@ tasks:
       - '@group(tests)'
       - 'tests/**/*'
       - 'vitest.config.*'
+
+  # Extends the top-level lint
+  lint:
+    args:
+      - '--ext'
+      - '.ts,.svelte'
