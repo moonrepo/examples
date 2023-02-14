@@ -11,6 +11,24 @@ fileGroups:
     - 'vite.config.*'
 
 tasks:
+  dev:
+    command: 'vite dev'
+    local: true
+
+  build:
+    command: 'vite build'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+    outputs:
+      - '.svelte-kit'
+
+  preview:
+    command: 'vite preview'
+    deps:
+      - 'build'
+    local: true
+
   test:
     command:
       - 'vitest'
