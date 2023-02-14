@@ -25,3 +25,6 @@ umd/
 # Nuxt
 .nuxt/
 .output/
+
+# Svelte
+.svelte-kit/
