@@ -2314,7 +2314,7 @@ export const words = [
 	'youth',
 	'zebra',
 	'zesty',
-	'zonal'
+	'zonal',
 ];
 
 /** The list of valid guesses, of which the list of possible words is a subset */
@@ -12976,5 +12976,5 @@ export const allowed = new Set([
 	'zygal',
 	'zygon',
 	'zymes',
-	'zymic'
+	'zymic',
 ]);
