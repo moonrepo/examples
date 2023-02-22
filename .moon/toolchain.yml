@@ -1,5 +1,3 @@
-# Trigger CI: 0
-
 $schema: 'https://moonrepo.dev/schemas/toolchain.json'
 
 node:
