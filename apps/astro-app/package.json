@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "@company/browser-package": "workspace:*",
-    "astro": "^2.0.11"
+    "astro": "^2.0.16"
   },
   "devDependencies": {
     "eslint-plugin-astro": "^0.23.0",

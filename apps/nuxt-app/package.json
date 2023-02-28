@@ -6,8 +6,8 @@
   },
   "devDependencies": {
     "eslint-plugin-vue": "^9.9.0",
-    "nuxt": "3.2.0",
+    "nuxt": "3.2.2",
     "vue": "^3.2.47",
-    "vue-tsc": "^1.0.24"
+    "vue-tsc": "^1.2.0"
   }
 }
