@@ -17,6 +17,8 @@ jobs:
           fetch-depth: 0
       - uses: actions/setup-node@v3
       - uses: moonrepo/setup-moon-action@v1
+      - name: Audit Dependencies
+        run: moon run root:audit
       - run: moon ci --color --log trace
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}

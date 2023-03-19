@@ -1,0 +1,7 @@
+language: bash
+
+tasks:
+  audit:
+    command: 'pnpm audit --audit-level=high'
+    options:
+      cache: false
