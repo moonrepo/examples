@@ -86,7 +86,6 @@ tasks:
     command:
       - 'tsc'
       - '--build'
-      - '--verbose'
     inputs:
       - '@group(app)'
       - '@globs(sources)'

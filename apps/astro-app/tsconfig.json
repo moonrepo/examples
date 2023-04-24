@@ -3,7 +3,6 @@
   "compilerOptions": {
     "outDir": "../../.moon/cache/types/apps/astro-app",
     "emitDeclarationOnly": false,
-    "importsNotUsedAsValues": "error",
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "noEmit": true

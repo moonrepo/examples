@@ -13,6 +13,7 @@
     "incremental": true,
     "noEmit": false,
     "noEmitOnError": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "verbatimModuleSyntax": false
   }
 }
