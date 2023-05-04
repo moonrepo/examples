@@ -1,18 +1,26 @@
 {
   "extends": "../../tsconfig.options.json",
   "compilerOptions": {
-    "outDir": "../../.moon/cache/types/apps/remix-app",
-    "baseUrl": ".",
-    "emitDeclarationOnly": false,
+    "lib": ["DOM", "DOM.Iterable", "ES2019"],
+    "isolatedModules": true,
+    "esModuleInterop": true,
     "jsx": "react-jsx",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "noEmit": true,
+    "target": "ES2019",
+    "strict": true,
+    "allowJs": true,
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
     "paths": {
-      "~/*": [
-        "./app/*"
-      ]
-    }
+      "~/*": ["./app/*"]
+    },
+
+    // Remix takes care of building everything in `remix build`.
+    "noEmit": true,
+
+    "outDir": "../../.moon/cache/types/apps/remix-app",
+    "emitDeclarationOnly": false
   },
   "include": [
     ".eslintrc.js",
