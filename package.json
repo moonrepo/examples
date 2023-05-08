@@ -11,7 +11,7 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@moonrepo/cli": "^1.4.0",
+    "@moonrepo/cli": "^1.5.0",
     "@swc/core": "^1.3.56",
     "@types/jest": "^29.5.1",
     "@types/node": "^18.16.3",
