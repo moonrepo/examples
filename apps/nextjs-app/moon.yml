@@ -13,16 +13,16 @@ tasks:
       - '@group(app)'
       - '@group(sources)'
 
-  export:
-    command: 'next export -o ./build'
-    deps:
-      - 'build'
-    inputs:
-      - '@group(app)'
-      - '@group(sources)'
-    outputs:
-      - '.next'
-      - 'build'
+  # export:
+  #   command: 'next export -o ./build'
+  #   deps:
+  #     - 'build'
+  #   inputs:
+  #     - '@group(app)'
+  #     - '@group(sources)'
+  #   outputs:
+  #     - '.next'
+  #     - 'build'
 
   dev:
     command: 'next dev'

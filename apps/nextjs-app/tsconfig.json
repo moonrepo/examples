@@ -6,12 +6,18 @@
     "incremental": true,
     "jsx": "preserve",
     "resolveJsonModule": true,
-    "noEmit": true
+    "noEmit": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
   },
   "include": [
     ".eslintrc.js",
+    ".next/types/**/*.ts",
     "next-env.d.ts",
-    "pages/**/*"
+    "app/**/*"
   ],
   "exclude": [
     "node_modules"

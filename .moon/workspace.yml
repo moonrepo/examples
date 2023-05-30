@@ -1,4 +1,4 @@
-# Trigger CI: 17
+# Trigger CI: 18
 
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
@@ -7,8 +7,7 @@ versionConstraint: '>=1.0.0'
 projects:
   astro-app: 'apps/astro-app'
   browser-package: 'packages/browser-package'
-  # Fix packemon upstream
-  # cjs-package: 'packages/cjs-package'
+  cjs-package: 'packages/cjs-package'
   mjs-package: 'packages/mjs-package'
   nextjs-app: 'apps/nextjs-app'
   nuxt-app: 'apps/nuxt-app'
