@@ -4,18 +4,19 @@
   "sideEffects": false,
   "dependencies": {
     "@company/browser-package": "workspace:*",
-    "@remix-run/css-bundle": "^1.16.1",
-    "@remix-run/node": "^1.16.1",
-    "@remix-run/react": "^1.16.1",
-    "@remix-run/serve": "^1.16.1",
+    "@remix-run/css-bundle": "^1.17.0",
+    "@remix-run/node": "^1.17.0",
+    "@remix-run/react": "^1.17.0",
+    "@remix-run/serve": "^1.17.0",
     "isbot": "^3.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^1.16.1",
-    "@remix-run/eslint-config": "^1.16.1",
-    "@types/react": "^18.2.7",
-    "@types/react-dom": "^18.2.4"
+    "@remix-run/dev": "^1.17.0",
+    "@remix-run/eslint-config": "^1.17.0",
+    "@types/react": "^18.2.12",
+    "@types/react-dom": "^18.2.5",
+    "deep-equal": "^2.2.1"
   }
 }
