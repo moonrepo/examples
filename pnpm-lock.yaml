@@ -7222,8 +7222,8 @@ packages:
   /argparse@2.0.1:
     resolution: {integrity: sha512-8+9WqebbFzpX9OR+Wa6O29asIogeRMzcGtAINdpMHHyAg10f05aSFVBbcEqGf/PXw1EjAZ+q2/bEBg3DvurK3Q==}
 
-  /aria-query@5.1.3:
-    resolution: {integrity: sha512-R5iJ5lkuHybztUfuOAznmboyjWq8O6sqNqtK7CLOqdydi54VNbORp49mb14KbWgG1QD3JFO9hJdZ+y4KutfdOQ==}
+  /aria-query@5.2.0:
+    resolution: {integrity: sha512-WkRzi93hMI7J6SwwGaHPm/l4vvO1qy3skvo+YCXJQfcMPmiUtm6i6fq/+1PwBX3zfsD2Cb8HvfrmwT3ZhtFbzg==}
     dependencies:
       deep-equal: 2.2.2
     dev: true
