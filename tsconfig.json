@@ -3,6 +3,9 @@
   "files": [],
   "references": [
     {
+      "path": "apps/angular-app"
+    },
+    {
       "path": "apps/astro-app"
     },
     {

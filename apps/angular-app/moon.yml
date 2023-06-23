@@ -1,0 +1,30 @@
+type: 'application'
+
+workspace:
+  inheritedTasks:
+    exclude: ['typecheck']
+
+fileGroups:
+  app:
+    - 'src/**/*'
+    - 'angular.*'
+
+tasks:
+  dev:
+    command: 'ng serve'
+    local: true
+
+  build:
+    command: 'ng build'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+    outputs:
+      - 'dist'
+  lint:
+    command:
+      - 'ng lint'
+      - '--fix'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
