@@ -4,10 +4,10 @@
   "private": true,
   "dependencies": {
     "@company/browser-package": "workspace:*",
-    "astro": "^2.6.3"
+    "astro": "^2.7.0"
   },
   "devDependencies": {
-    "eslint-plugin-astro": "^0.27.1",
+    "eslint-plugin-astro": "^0.27.2",
     "prettier-plugin-astro": "^0.10.0"
   }
 }
