@@ -21,10 +21,9 @@ tasks:
       - '@group(sources)'
     outputs:
       - 'dist'
+
+  # Extends the top-level lint
   lint:
-    command:
-      - 'ng lint'
-      - '--fix'
-    inputs:
-      - '@group(app)'
-      - '@group(sources)'
+    args:
+      - '--ext'
+      - '.ts,.svelte'

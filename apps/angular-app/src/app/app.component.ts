@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { add } from '@company/browser-package';
 
 @Component({
 	selector: 'app-root',
@@ -10,4 +11,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 	title = 'angular-app';
+	constructor() {
+		console.log(add(1, 1));
+	}
 }
