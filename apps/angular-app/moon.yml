@@ -2,7 +2,7 @@ type: 'application'
 
 workspace:
   inheritedTasks:
-    exclude: ['typecheck']
+    exclude: ['lint']
 
 fileGroups:
   app:
@@ -22,8 +22,8 @@ tasks:
     outputs:
       - 'dist'
 
-  # Extends the top-level lint
   lint:
-    args:
-      - '--ext'
-      - '.ts,.svelte'
+    command: 'ng lint'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
