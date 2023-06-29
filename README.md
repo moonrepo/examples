@@ -36,6 +36,7 @@ The following tools are configured as moon tasks.
 
 The following frameworks have been integrated into moon.
 
+- [Angular](./apps/angular-app/README.md)
 - [Astro](./apps/astro-app/README.md)
 - [Next](./apps/nextjs-app/README.md)
 - [Nuxt](./apps/nuxt-app/README.md)
