@@ -1,0 +1,16 @@
+type: 'application'
+
+fileGroups:
+  app:
+    - 'nest-cli.*'
+
+tasks:
+  dev:
+    command: 'nest start --watch'
+    local: true
+
+  build:
+    command: 'nest build'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'

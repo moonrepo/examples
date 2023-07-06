@@ -9,6 +9,9 @@
       "path": "apps/astro-app"
     },
     {
+      "path": "apps/nestjs-app"
+    },
+    {
       "path": "apps/nextjs-app"
     },
     {
