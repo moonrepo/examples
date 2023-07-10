@@ -20,9 +20,9 @@
     "@angular/platform-browser-dynamic": "^16.1.4",
     "@angular/router": "^16.1.4",
     "@company/browser-package": "workspace:*",
-    "rxjs": "~7.8.0",
-    "tslib": "^2.3.0",
-    "zone.js": "~0.13.0"
+    "rxjs": "~7.8.1",
+    "tslib": "^2.6.0",
+    "zone.js": "~0.13.1"
   },
   "devDependencies": {
     "@angular-builders/jest": "^16.0.0",
