@@ -38,6 +38,7 @@ The following frameworks have been integrated into moon.
 
 - [Angular](./apps/angular-app/README.md)
 - [Astro](./apps/astro-app/README.md)
+- [Nest](./apps/nestjs-app/README.md)
 - [Next](./apps/nextjs-app/README.md)
 - [Nuxt](./apps/nuxt-app/README.md)
 - [Remix](./apps/remix-app/README.md)

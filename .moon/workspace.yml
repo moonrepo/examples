@@ -10,6 +10,7 @@ projects:
   browser-package: 'packages/browser-package'
   cjs-package: 'packages/cjs-package'
   mjs-package: 'packages/mjs-package'
+  nestjs-app: 'apps/nestjs-app'
   nextjs-app: 'apps/nextjs-app'
   nuxt-app: 'apps/nuxt-app'
   node-package: 'packages/node-package'
