@@ -25,11 +25,11 @@ tasks:
       - '@group(app)'
       - '@group(sources)'
       - '@group(tests)'
-  
+
   lint:
     command:
-      - "eslint"
-      - "--fix"
+      - 'eslint'
+      - '--fix'
     inputs:
       - '@group(app)'
       - '@group(sources)'
