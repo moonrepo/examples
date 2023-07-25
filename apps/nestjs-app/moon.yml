@@ -1,5 +1,9 @@
 type: 'application'
 
+workspace:
+  inheritedTasks:
+    exclude: ['lint']
+
 fileGroups:
   app:
     - 'nest-cli.*'
@@ -17,6 +21,15 @@ tasks:
 
   e2e:
     command: 'jest --config ./test/jest-e2e.json'
+    inputs:
+      - '@group(app)'
+      - '@group(sources)'
+      - '@group(tests)'
+  
+  lint:
+    command:
+      - "eslint"
+      - "--fix"
     inputs:
       - '@group(app)'
       - '@group(sources)'
