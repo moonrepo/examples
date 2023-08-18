@@ -2,8 +2,11 @@ import { allowed, words } from './words.server';
 
 export class Game {
 	index: number;
+
 	guesses: string[];
+
 	answers: string[];
+
 	answer: string;
 
 	/**
