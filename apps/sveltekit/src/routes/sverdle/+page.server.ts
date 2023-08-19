@@ -63,7 +63,6 @@ export const actions = {
 		if (key === 'backspace') {
 			game.guesses[i] = game.guesses[i].slice(0, -1);
 		} else {
-			 
 			game.guesses[i] += key;
 		}
 

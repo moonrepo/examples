@@ -15,18 +15,6 @@ import { RemixServer } from '@remix-run/react';
 
 const ABORT_DELAY = 5000;
 
-export default async function handleRequest(
-	request: Request,
-	responseStatusCode: number,
-	responseHeaders: Headers,
-	remixContext: EntryContext,
-	loadContext: AppLoadContext,
-) {
-	return isbot(request.headers.get('user-agent'))
-		? handleBotRequest(request, responseStatusCode, responseHeaders, remixContext)
-		: handleBrowserRequest(request, responseStatusCode, responseHeaders, remixContext);
-}
-
 async function handleBotRequest(
 	request: Request,
 	responseStatusCode: number,
@@ -101,4 +89,16 @@ async function handleBrowserRequest(
 
 		setTimeout(abort, ABORT_DELAY);
 	});
+}
+
+export default async function handleRequest(
+	request: Request,
+	responseStatusCode: number,
+	responseHeaders: Headers,
+	remixContext: EntryContext,
+	loadContext: AppLoadContext,
+) {
+	return isbot(request.headers.get('user-agent'))
+		? handleBotRequest(request, responseStatusCode, responseHeaders, remixContext)
+		: handleBrowserRequest(request, responseStatusCode, responseHeaders, remixContext);
 }
