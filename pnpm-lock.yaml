@@ -9,8 +9,8 @@ importers:
   .:
     devDependencies:
       '@moonrepo/cli':
-        specifier: ^1.11.1
-        version: 1.11.1
+        specifier: ^1.12.0
+        version: 1.12.0
       '@swc/core':
         specifier: ^1.3.78
         version: 1.3.78(@swc/helpers@0.5.1)
@@ -21,14 +21,14 @@ importers:
         specifier: ^18.16.3
         version: 18.16.3
       babel-preset-moon:
-        specifier: ^2.0.6
-        version: 2.0.6(@babel/core@7.22.10)
+        specifier: ^2.0.7
+        version: 2.0.7(@babel/core@7.22.10)
       eslint:
         specifier: ^8.47.0
         version: 8.47.0
       eslint-config-moon:
-        specifier: ^2.0.6
-        version: 2.0.6(eslint@8.47.0)(jest@29.6.2)(typescript@5.1.6)
+        specifier: ^2.0.7
+        version: 2.0.7(eslint@8.47.0)(jest@29.6.2)(typescript@5.1.6)
       jest:
         specifier: ^29.6.2
         version: 29.6.2(@types/node@18.16.3)
@@ -1469,8 +1469,8 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
-  /@babel/plugin-proposal-decorators@7.22.7(@babel/core@7.22.10):
-    resolution: {integrity: sha512-omXqPF7Onq4Bb7wHxXjM3jSMSJvUUbvDvmmds7KI5n9Cq6Ln5I05I1W2nRlRof1rGdiUxJrxwe285WF96XlBXQ==}
+  /@babel/plugin-proposal-decorators@7.22.10(@babel/core@7.22.10):
+    resolution: {integrity: sha512-KxN6TqZzcFi4uD3UifqXElBTBNLAEH1l3vzMQj6JwJZbL2sZlThxSViOKCYY+4Ah4V4JhQ95IVB7s/Y6SJSlMQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -1480,7 +1480,7 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
       '@babel/helper-replace-supers': 7.22.9(@babel/core@7.22.10)
       '@babel/helper-split-export-declaration': 7.22.6
-      '@babel/plugin-syntax-decorators': 7.22.5(@babel/core@7.22.10)
+      '@babel/plugin-syntax-decorators': 7.22.10(@babel/core@7.22.10)
     dev: true
 
   /@babel/plugin-proposal-export-default-from@7.22.5(@babel/core@7.22.10):
@@ -1610,8 +1610,8 @@ packages:
       '@babel/helper-plugin-utils': 7.22.5
     dev: true
 
-  /@babel/plugin-syntax-decorators@7.22.5(@babel/core@7.22.10):
-    resolution: {integrity: sha512-avpUOBS7IU6al8MmF1XpAyj9QYeLPuSDJI5D4pVMSMdL7xQokKqJPYQC67RCT0aCTashUXPiGwMJ0DEXXCEmMA==}
+  /@babel/plugin-syntax-decorators@7.22.10(@babel/core@7.22.10):
+    resolution: {integrity: sha512-z1KTVemBjnz+kSEilAsI4lbkPOl5TvJH7YDSY1CTIzvLWJ+KHXp+mRe8VPmfnyvqOPqar1V2gid2PleKzRUstQ==}
     engines: {node: '>=6.9.0'}
     peerDependencies:
       '@babel/core': ^7.0.0-0
@@ -4952,76 +4952,76 @@ packages:
       - supports-color
     dev: true
 
-  /@mdn/browser-compat-data@5.3.6:
-    resolution: {integrity: sha512-sDz0Yjj8m+VTWPiC0TF28rLMCDS2fJTZZmDpFMx5Y0H4NVGzqOs30l4pV8Tpexen4GyT+wYCNjedY8pTNjiW7Q==}
+  /@mdn/browser-compat-data@5.3.11:
+    resolution: {integrity: sha512-jczDSsCfDeAdGAaUPA/r7G2lFjVz/oE1qClHkM5zw8fw+Vod1RMlwlF//UMgbe/V8G57RYe7UXGpTmiWjFg3Cg==}
     dev: true
 
-  /@moonrepo/cli@1.11.1:
-    resolution: {integrity: sha512-W6eq9rzlOIJDHCfyPQryzjvVaHwBN5xoOuf5BwtAKRxkXq2/+p6uCE85vpmgA6YAiBx3vvdrADCLUR3N7hUadw==}
+  /@moonrepo/cli@1.12.0:
+    resolution: {integrity: sha512-mt0Sten+V79bK4rl2mTe/zF/zjTaM0cM5DEo+anIo1S2u6+zQ1Zw/cQNN4nAkE6J35ZTyg3Z6TO6urJtEpBamg==}
     hasBin: true
     requiresBuild: true
     dependencies:
       detect-libc: 2.0.2
     optionalDependencies:
-      '@moonrepo/core-linux-arm64-gnu': 1.11.1
-      '@moonrepo/core-linux-arm64-musl': 1.11.1
-      '@moonrepo/core-linux-x64-gnu': 1.11.1
-      '@moonrepo/core-linux-x64-musl': 1.11.1
-      '@moonrepo/core-macos-arm64': 1.11.1
-      '@moonrepo/core-macos-x64': 1.11.1
-      '@moonrepo/core-windows-x64-msvc': 1.11.1
+      '@moonrepo/core-linux-arm64-gnu': 1.12.0
+      '@moonrepo/core-linux-arm64-musl': 1.12.0
+      '@moonrepo/core-linux-x64-gnu': 1.12.0
+      '@moonrepo/core-linux-x64-musl': 1.12.0
+      '@moonrepo/core-macos-arm64': 1.12.0
+      '@moonrepo/core-macos-x64': 1.12.0
+      '@moonrepo/core-windows-x64-msvc': 1.12.0
     dev: true
 
-  /@moonrepo/core-linux-arm64-gnu@1.11.1:
-    resolution: {integrity: sha512-jSf73/96L9NevoNyHqJk0XcXx4QNqAumePY7wACVJlqqvstXNbzxy0TQ8WMwi1WAX2C+YdCIub5sHPgWCxm8aw==}
+  /@moonrepo/core-linux-arm64-gnu@1.12.0:
+    resolution: {integrity: sha512-qRX6pv+lLLGPqyO5RRctQE2U9aBfXRRKPLTqbNFjh2Z6FCiJM7C/yx8pdL5282RYrUbOkuGuyAPaU1kgppBmkQ==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-linux-arm64-musl@1.11.1:
-    resolution: {integrity: sha512-CYofY435t7dyf5PbPzQvXLQ9MsObZ7B5uoIlzfOK5+9ZYZKAeem8jTv+iD6/8LjlhiGjBo8C9Z3O/j1VZ9HCCw==}
+  /@moonrepo/core-linux-arm64-musl@1.12.0:
+    resolution: {integrity: sha512-r4gls730ZG41ReHvLr3xxXLBagFwyQCcfFASt58YaHddJbIkKrraXddZffsTH6Csaxr8VEzZqxYbBjtW9sdjOA==}
     cpu: [arm64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-linux-x64-gnu@1.11.1:
-    resolution: {integrity: sha512-2/VxsISuC8Wb4tBf3MfXyY3Ej7l0decfc4QDDlXNbLFXHG/hKG/KLI4LAdbActPd66AGdrlqRTlmw7l8u0VP6A==}
+  /@moonrepo/core-linux-x64-gnu@1.12.0:
+    resolution: {integrity: sha512-LcwlU/FE+VI7r6Xk2D561sVT1uGrCTLWxllNuE3VY2XOMf+DeMBPekZo24wk25sHIT3zl6AsExueJAu03TtJUA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-linux-x64-musl@1.11.1:
-    resolution: {integrity: sha512-qT4cNXSc1YQeeg2h6w/KM8tR5ZR3a0P5b3lLflLF/YCdxnCGjDygY+IBopOq5xRn9c2Q/JJ8btf8hP1dctjVuA==}
+  /@moonrepo/core-linux-x64-musl@1.12.0:
+    resolution: {integrity: sha512-lk3cVJMf43iv1CQlaExYAmL8NPy7wa1w2W67dQfzH+vCaIJD+GNniyJ8TskWeJ/+eqcIebxckbatdDNA8AAnVA==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-macos-arm64@1.11.1:
-    resolution: {integrity: sha512-jLk0OJWuoLgeu1r8RnVd4SD1AfvZvc039l57fsYsQXQ0yQU7e9NwSie701VsVZDKnAiqsML30TH7+i2T63HAsQ==}
+  /@moonrepo/core-macos-arm64@1.12.0:
+    resolution: {integrity: sha512-sfL8Ds9z/WyXJ3V+fknqxvL0BrdtXV8Br8yiMJilWWjjEuYmEqKRGotxuhzt7P8a6GJo3bhYjisRFW2DLRlM6w==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-macos-x64@1.11.1:
-    resolution: {integrity: sha512-evK6SN9oaFfzRsI/aLZEhdt6jhl05O4X/PCR7mc8ldzxdtYUpXP8brakkuFXxSH+gBBGubPLxuWQYUgKLk2R6A==}
+  /@moonrepo/core-macos-x64@1.12.0:
+    resolution: {integrity: sha512-hTFABm2KPa4ykDbJeP1knuIDhQrVHsaNXQOSkPQSzKbq7jNaP3kazfsGlCmSHiqTP4o5VJVZyawFQT1fKYrkfQ==}
     cpu: [x64]
     os: [darwin]
     requiresBuild: true
     dev: true
     optional: true
 
-  /@moonrepo/core-windows-x64-msvc@1.11.1:
-    resolution: {integrity: sha512-a4oW2J/VFiUoeaRLUqVHhl6Oe2IgMpLpwcZcTn3oFT5SHrP7soBVQKidG5N7nOu1/tKZgmOkJe1x+CmfWwKltg==}
+  /@moonrepo/core-windows-x64-msvc@1.12.0:
+    resolution: {integrity: sha512-S1PxyJYb3pXyxhsfr2oNsiX4NEYwWwuosGpdYpCwm4+H6J+Wg2Iv5cDTBNOWRGpYUKlHWO3Bi7+tC3qvjWzEWQ==}
     cpu: [x64]
     os: [win32]
     requiresBuild: true
@@ -7967,7 +7967,7 @@ packages:
   /ast-metadata-inferer@0.8.0:
     resolution: {integrity: sha512-jOMKcHht9LxYIEQu+RVd22vtgrPaVCtDRQ/16IGmurdzxvYbDd5ynxjnyrzLnieG96eTcAyaoj/wN/4/1FyyeA==}
     dependencies:
-      '@mdn/browser-compat-data': 5.3.6
+      '@mdn/browser-compat-data': 5.3.11
     dev: true
 
   /ast-types-flow@0.0.7:
@@ -8394,15 +8394,15 @@ packages:
       babel-preset-current-node-syntax: 1.0.1(@babel/core@7.22.10)
     dev: true
 
-  /babel-preset-moon@2.0.6(@babel/core@7.22.10):
-    resolution: {integrity: sha512-aZhHuLKNlOdv6Bxvozi5YbFjDv22tAWt+8PJIUqZ1m1pk8UWj8rYHtzfSyTtTSLvKmhUFJbecWL5l5qO8YwBSw==}
+  /babel-preset-moon@2.0.7(@babel/core@7.22.10):
+    resolution: {integrity: sha512-7L99DOafznEY1uHY2aLbEit8qfMMAbuV3BKdZY6QrGCm93yXc0PHw32CuWjfdSTTSx8UqhqggOfZQED/8FOf8A==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
       '@babel/core': '>=7.0.0'
     dependencies:
       '@babel/core': 7.22.10
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.22.10)
-      '@babel/plugin-proposal-decorators': 7.22.7(@babel/core@7.22.10)
+      '@babel/plugin-proposal-decorators': 7.22.10(@babel/core@7.22.10)
       '@babel/plugin-proposal-export-default-from': 7.22.5(@babel/core@7.22.10)
       '@babel/plugin-proposal-export-namespace-from': 7.18.9(@babel/core@7.22.10)
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.22.10)
@@ -10354,8 +10354,8 @@ packages:
       semver: 6.3.1
     dev: true
 
-  /eslint-config-moon@2.0.6(eslint@8.47.0)(jest@29.6.2)(typescript@5.1.6):
-    resolution: {integrity: sha512-Eqlzs0SCby8tcl0mBxrL6A0qKn16e5CvJS6ln20STdvMrykE9DU59I+pwUgdn2tL3wwtuh8aCoUDglcWsyJ48Q==}
+  /eslint-config-moon@2.0.7(eslint@8.47.0)(jest@29.6.2)(typescript@5.1.6):
+    resolution: {integrity: sha512-UaZVSUtOluk1gfZQHzUX8tlB5nLg8oDtdzp2pCF47Zc3OnwHictmxmNPOO+4V5hJXR2tMM67uZ0olcf8fz97ng==}
     engines: {node: '>=16.12.0'}
     peerDependencies:
       eslint: ^8.0.0
@@ -10365,7 +10365,7 @@ packages:
       '@typescript-eslint/parser': 6.4.0(eslint@8.47.0)(typescript@5.1.6)
       eslint: 8.47.0
       eslint-config-airbnb-base: 15.0.0(eslint-plugin-import@2.28.1)(eslint@8.47.0)
-      eslint-config-prettier: 8.10.0(eslint@8.47.0)
+      eslint-config-prettier: 9.0.0(eslint@8.47.0)
       eslint-plugin-compat: 4.1.4(eslint@8.47.0)
       eslint-plugin-import: 2.28.1(@typescript-eslint/parser@6.4.0)(eslint-import-resolver-typescript@3.6.0)(eslint@8.47.0)
       eslint-plugin-jest: 27.2.3(@typescript-eslint/eslint-plugin@6.4.0)(eslint@8.47.0)(jest@29.6.2)(typescript@5.1.6)
@@ -10376,7 +10376,7 @@ packages:
       eslint-plugin-react-hooks: 4.6.0(eslint@8.47.0)
       eslint-plugin-react-perf: 3.3.1(eslint@8.47.0)
       eslint-plugin-simple-import-sort: 10.0.0(eslint@8.47.0)
-      eslint-plugin-solid: 0.12.1(eslint@8.47.0)(typescript@5.1.6)
+      eslint-plugin-solid: 0.13.0(eslint@8.47.0)(typescript@5.1.6)
       eslint-plugin-unicorn: 48.0.1(eslint@8.47.0)
     transitivePeerDependencies:
       - eslint-import-resolver-typescript
@@ -10409,15 +10409,6 @@ packages:
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
-    dev: true
-
-  /eslint-config-prettier@8.10.0(eslint@8.47.0):
-    resolution: {integrity: sha512-SM8AMJdeQqRYT9O9zguiruQZaN7+z+E4eAP9oiLNGKMtomwaB1E9dcgUD6ZAn/eQAb52USbvezbiljfZUhbJcg==}
-    hasBin: true
-    peerDependencies:
-      eslint: '>=7.0.0'
-    dependencies:
-      eslint: 8.47.0
     dev: true
 
   /eslint-config-prettier@9.0.0(eslint@8.47.0):
@@ -10515,7 +10506,7 @@ packages:
     peerDependencies:
       eslint: ^4.0.0 || ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      '@mdn/browser-compat-data': 5.3.6
+      '@mdn/browser-compat-data': 5.3.11
       '@tsconfig/node14': 1.0.3
       ast-metadata-inferer: 0.8.0
       browserslist: 4.21.10
@@ -10715,13 +10706,13 @@ packages:
       eslint: 8.47.0
     dev: true
 
-  /eslint-plugin-solid@0.12.1(eslint@8.47.0)(typescript@5.1.6):
-    resolution: {integrity: sha512-fM0sEg9PcS1mcNbWklwc+W/lOv1/XyEwXf53HmFFy4GOA8E3u41h8JW+hc+Vv1m3kh01umKoTalOTET08zKdAQ==}
+  /eslint-plugin-solid@0.13.0(eslint@8.47.0)(typescript@5.1.6):
+    resolution: {integrity: sha512-Sutd+DxEGu9+Z9ITtHKXRAClxVe1a6C1XQZSuN8iBsMy0IAVEc6Tca1UYgc7tD2ZrRRjZKB9mohBOaZl5NJLgg==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
       eslint: ^6.0.0 || ^7.0.0 || ^8.0.0
     dependencies:
-      '@typescript-eslint/utils': 5.62.0(eslint@8.47.0)(typescript@5.1.6)
+      '@typescript-eslint/utils': 6.4.0(eslint@8.47.0)(typescript@5.1.6)
       eslint: 8.47.0
       is-html: 2.0.0
       jsx-ast-utils: 3.3.5
@@ -15975,7 +15966,7 @@ packages:
     dependencies:
       '@babel/core': 7.22.10
       '@babel/plugin-external-helpers': 7.22.5(@babel/core@7.22.10)
-      '@babel/plugin-proposal-decorators': 7.22.7(@babel/core@7.22.10)
+      '@babel/plugin-proposal-decorators': 7.22.10(@babel/core@7.22.10)
       '@babel/plugin-transform-runtime': 7.22.9(@babel/core@7.22.10)
       '@babel/preset-env': 7.22.10(@babel/core@7.22.10)
       '@babel/preset-flow': 7.22.5(@babel/core@7.22.10)
