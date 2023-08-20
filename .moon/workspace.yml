@@ -1,8 +1,8 @@
-# Trigger CI: 18
+# Trigger CI: 19
 
 $schema: 'https://moonrepo.dev/schemas/workspace.json'
 
-versionConstraint: '>=1.0.0'
+versionConstraint: '>=1.12.0'
 
 projects:
   angular-app: 'apps/angular-app'
