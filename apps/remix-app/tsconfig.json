@@ -5,7 +5,7 @@
     "baseUrl": ".",
     "emitDeclarationOnly": false,
     "jsx": "react-jsx",
-    "moduleResolution": "node",
+    "moduleResolution": "nodenext",
     "resolveJsonModule": true,
     "noEmit": true,
     "paths": {

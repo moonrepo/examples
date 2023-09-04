@@ -4,6 +4,7 @@
   "compilerOptions": {
     "allowJs": true,
     "lib": ["esnext", "dom"],
+    "module": "nodenext",
     "moduleResolution": "nodenext",
     "target": "es2022",
     "composite": true,
