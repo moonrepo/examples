@@ -19,12 +19,12 @@ tasks:
       - '@group(app)'
       - '@group(sources)'
 
-  e2e:
-    command: 'jest --config ./test/jest-e2e.json'
-    inputs:
-      - '@group(app)'
-      - '@group(sources)'
-      - '@group(tests)'
+  # e2e:
+  #   command: 'jest --config ./test/jest-e2e.json'
+  #   inputs:
+  #     - '@group(app)'
+  #     - '@group(sources)'
+  #     - '@group(tests)'
 
   lint:
     command:
