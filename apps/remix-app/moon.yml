@@ -20,11 +20,13 @@ tasks:
       - 'build'
 
   dev:
-    command: 'remix dev'
+    # Can't use `remix dev` because it can't find npm bins correctly.
+    # It requires Node's module resolution.
+    command: 'pnpm run dev'
     local: true
 
   start:
-    command: 'remix-serve ./build'
+    command: 'remix-serve ./build/index.js'
     deps:
       - 'build'
     local: true

@@ -1,8 +1,6 @@
-/* eslint-disable camelcase */
+import type { MetaFunction } from '@remix-run/node';
 
-import type { V2_MetaFunction } from '@remix-run/node';
-
-export const meta: V2_MetaFunction = () => [
+export const meta: MetaFunction = () => [
 	{ title: 'New Remix App' },
 	{ content: 'Welcome to Remix!', name: 'description' },
 ];
