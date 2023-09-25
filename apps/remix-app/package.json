@@ -2,6 +2,9 @@
   "name": "@apps/remix-app",
   "private": true,
   "sideEffects": false,
+  "scripts": {
+    "dev": "remix dev"
+  },
   "dependencies": {
     "@company/browser-package": "workspace:*",
     "@remix-run/css-bundle": "^2.0.1",

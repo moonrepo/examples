@@ -10,7 +10,7 @@ import { PassThrough } from 'node:stream';
 import { renderToPipeableStream } from 'react-dom/server';
 import isbot from 'isbot';
 import type { AppLoadContext, EntryContext } from '@remix-run/node';
-import { Response } from '@remix-run/node';
+import { createReadableStreamFromReadable } from '@remix-run/node';
 import { RemixServer } from '@remix-run/react';
 
 const ABORT_DELAY = 5000;
@@ -31,7 +31,7 @@ async function handleBotRequest(
 					responseHeaders.set('Content-Type', 'text/html');
 
 					resolve(
-						new Response(body, {
+						new Response(createReadableStreamFromReadable(body), {
 							headers: responseHeaders,
 							status: responseStatusCode,
 						}),
@@ -76,7 +76,7 @@ async function handleBrowserRequest(
 					responseHeaders.set('Content-Type', 'text/html');
 
 					resolve(
-						new Response(body, {
+						new Response(createReadableStreamFromReadable(body), {
 							headers: responseHeaders,
 							status: responseStatusCode,
 						}),

@@ -5,7 +5,8 @@
     "baseUrl": ".",
     "emitDeclarationOnly": false,
     "jsx": "react-jsx",
-    "moduleResolution": "nodenext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
     "resolveJsonModule": true,
     "noEmit": true,
     "paths": {
