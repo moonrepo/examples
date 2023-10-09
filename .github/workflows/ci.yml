@@ -12,11 +12,10 @@ jobs:
       matrix:
         os: [ubuntu-latest, windows-latest]
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
-      - uses: moonrepo/setup-moon-action@v1
+      - uses: moonrepo/setup-toolchain@v0
       - run: moon ci --color --log trace
         env:
           MOONBASE_SECRET_KEY: ${{ secrets.MOONBASE_SECRET_KEY }}

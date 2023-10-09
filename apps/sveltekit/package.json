@@ -12,11 +12,11 @@
   "devDependencies": {
     "@fontsource/fira-mono": "^5.0.8",
     "@types/cookie": "^0.5.2",
-    "@vitest/coverage-v8": "^0.34.5",
+    "@vitest/coverage-v8": "^0.34.6",
     "eslint-plugin-svelte3": "^4.0.0",
     "tslib": "^2.6.2",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9",
-    "vitest": "^0.34.5"
+    "vite": "^4.4.11",
+    "vitest": "^0.34.6"
   }
 }
