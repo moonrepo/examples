@@ -11,8 +11,8 @@
     "packages/*"
   ],
   "devDependencies": {
-    "@moonrepo/cli": "^1.18.5",
-    "@swc/core": "^1.3.101",
+    "@moonrepo/cli": "^1.19.0",
+    "@swc/core": "^1.3.102",
     "@types/jest": "^29.5.11",
     "@types/node": "^20.10.6",
     "babel-preset-moon": "^2.0.12",
