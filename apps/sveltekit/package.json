@@ -11,6 +11,7 @@
   },
   "devDependencies": {
     "@fontsource/fira-mono": "^5.0.8",
+    "@sveltejs/vite-plugin-svelte": "^3.0.0",
     "@types/cookie": "^0.6.0",
     "@vitest/coverage-v8": "^1.1.0",
     "eslint-plugin-svelte3": "^4.0.0",
