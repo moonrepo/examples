@@ -39,13 +39,13 @@ export const actions = {
 			return fail(400, { badGuess: true });
 		}
 
-		cookies.set('sverdle', game.toString());
+		cookies.set('sverdle', game.toString(), { path: '/' });
 
 		return undefined;
 	},
 
 	restart: ({ cookies }) => {
-		cookies.delete('sverdle');
+		cookies.delete('sverdle', { path: '/' });
 	},
 
 	/**
@@ -66,7 +66,7 @@ export const actions = {
 			game.guesses[i] += key;
 		}
 
-		cookies.set('sverdle', game.toString());
+		cookies.set('sverdle', game.toString(), { path: '/' });
 
 		return undefined;
 	},
