@@ -8,7 +8,7 @@
 
 import { PassThrough } from 'node:stream';
 import { renderToPipeableStream } from 'react-dom/server';
-import isbot from 'isbot';
+import { isbot } from 'isbot';
 import type { AppLoadContext, EntryContext } from '@remix-run/node';
 import { createReadableStreamFromReadable } from '@remix-run/node';
 import { RemixServer } from '@remix-run/react';
@@ -44,7 +44,7 @@ async function handleBotRequest(
 					console.error(error);
 				},
 				onShellError(error: unknown) {
-					reject(error);
+					reject(error as Error);
 				},
 			},
 		);
@@ -68,7 +68,7 @@ async function handleBrowserRequest(
 					responseStatusCode = 500;
 				},
 				onShellError(error: unknown) {
-					reject(error);
+					reject(error as Error);
 				},
 				onShellReady() {
 					const body = new PassThrough();
