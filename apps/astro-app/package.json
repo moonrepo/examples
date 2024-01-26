@@ -5,11 +5,11 @@
   "dependencies": {
     "@astrojs/check": "^0.3.4",
     "@company/browser-package": "workspace:*",
-    "astro": "^4.0.8"
+    "astro": "^4.2.4"
   },
   "devDependencies": {
-    "eslint-plugin-astro": "^0.31.0",
-    "prettier-plugin-astro": "^0.12.3",
+    "eslint-plugin-astro": "^0.31.3",
+    "prettier-plugin-astro": "^0.13.0",
     "typescript": "^5.3.3"
   }
 }
