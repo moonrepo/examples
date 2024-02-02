@@ -3,13 +3,13 @@
   "version": "0.0.1",
   "private": true,
   "dependencies": {
-    "@astrojs/check": "^0.3.4",
+    "@astrojs/check": "^0.4.1",
     "@company/browser-package": "workspace:*",
-    "astro": "^4.0.8"
+    "astro": "^4.3.1"
   },
   "devDependencies": {
-    "eslint-plugin-astro": "^0.31.0",
-    "prettier-plugin-astro": "^0.12.3",
+    "eslint-plugin-astro": "^0.31.4",
+    "prettier-plugin-astro": "^0.13.0",
     "typescript": "^5.3.3"
   }
 }
