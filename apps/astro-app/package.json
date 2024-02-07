@@ -5,7 +5,7 @@
   "dependencies": {
     "@astrojs/check": "^0.4.1",
     "@company/browser-package": "workspace:*",
-    "astro": "^4.3.1"
+    "astro": "^4.3.3"
   },
   "devDependencies": {
     "eslint-plugin-astro": "^0.31.4",
