@@ -4,7 +4,7 @@
   "infra": "monorepo",
   "scripts": {
     "deps": "pnpm update -i --latest -r",
-    "moon": "moon --color --log trace"
+    "moon": "moon --color --log debug"
   },
   "workspaces": [
     "apps/*",

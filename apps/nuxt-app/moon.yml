@@ -70,3 +70,5 @@ tasks:
     args:
       - '--ext'
       - '.ts,.vue'
+    deps:
+      - 'build' # Requires built TS files
