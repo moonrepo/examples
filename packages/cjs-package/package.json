@@ -18,7 +18,7 @@
     }
   },
   "engines": {
-    "node": ">=16.12.0"
+    "node": ">=18.12.0"
   },
   "files": [
     "cjs/**/*",
@@ -29,17 +29,13 @@
   "exports": {
     "./package.json": "./package.json",
     "./*": {
-      "node": {
-        "types": "./cjs/*.d.ts",
-        "require": "./cjs/*.cjs"
-      }
+      "types": "./cjs/*.d.ts",
+      "default": "./cjs/*.cjs"
     },
     ".": {
-      "node": {
-        "types": "./cjs/index.d.cts",
-        "import": "./cjs/index-wrapper.mjs",
-        "require": "./cjs/index.cjs"
-      }
+      "types": "./cjs/index.d.cts",
+      "import": "./cjs/index-wrapper.mjs",
+      "default": "./cjs/index.cjs"
     }
   }
 }

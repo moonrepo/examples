@@ -14,7 +14,7 @@
     "platform": "node"
   },
   "engines": {
-    "node": ">=16.12.0",
+    "node": ">=18.12.0",
     "npm": ">=6.14.0"
   },
   "files": [
@@ -27,18 +27,10 @@
     "./package.json": "./package.json",
     "./*": {
       "types": "./lib/*.d.ts",
-      "node": {
-        "types": "./lib/*.d.ts",
-        "default": "./lib/*.js"
-      },
       "default": "./lib/*.js"
     },
     ".": {
       "types": "./lib/index.d.ts",
-      "node": {
-        "types": "./lib/index.d.ts",
-        "default": "./lib/index.js"
-      },
       "default": "./lib/index.js"
     }
   }
