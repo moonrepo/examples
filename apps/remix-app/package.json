@@ -7,18 +7,18 @@
   },
   "dependencies": {
     "@company/browser-package": "workspace:*",
-    "@remix-run/css-bundle": "^2.7.2",
-    "@remix-run/node": "^2.7.2",
-    "@remix-run/react": "^2.7.2",
-    "@remix-run/serve": "^2.7.2",
-    "isbot": "^5.1.0",
+    "@remix-run/css-bundle": "^2.8.1",
+    "@remix-run/node": "^2.8.1",
+    "@remix-run/react": "^2.8.1",
+    "@remix-run/serve": "^2.8.1",
+    "isbot": "^5.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@remix-run/dev": "^2.7.2",
-    "@types/react": "^18.2.59",
-    "@types/react-dom": "^18.2.19",
+    "@remix-run/dev": "^2.8.1",
+    "@types/react": "^18.2.70",
+    "@types/react-dom": "^18.2.22",
     "deep-equal": "^2.2.3"
   }
 }

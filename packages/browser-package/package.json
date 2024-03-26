@@ -31,14 +31,14 @@
   "exports": {
     "./package.json": "./package.json",
     ".": {
-      "types": "./lib/index.d.ts",
-      "browser": {
+      "import": {
         "types": "./esm/index.d.ts",
-        "module": "./esm/index.js",
-        "import": "./esm/index.js",
-        "default": "./lib/index.js"
+        "default": "./esm/index.js"
       },
-      "default": "./lib/index.js"
+      "require": {
+        "types": "./lib/index.d.ts",
+        "default": "./lib/index.js"
+      }
     }
   }
 }
