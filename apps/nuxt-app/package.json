@@ -6,14 +6,14 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@vue/reactivity": "^3.4.21",
-    "@vue/runtime-core": "^3.4.21",
-    "@vue/runtime-dom": "^3.4.21",
-    "@vue/shared": "^3.4.21",
-    "vue": "^3.4.21"
+    "@vue/reactivity": "^3.4.23",
+    "@vue/runtime-core": "^3.4.23",
+    "@vue/runtime-dom": "^3.4.23",
+    "@vue/shared": "^3.4.23",
+    "vue": "^3.4.23"
   },
   "devDependencies": {
-    "nuxt": "^3.11.1",
-    "vue-tsc": "^2.0.7"
+    "nuxt": "^3.11.2",
+    "vue-tsc": "^2.0.13"
   }
 }
