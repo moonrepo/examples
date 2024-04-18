@@ -4,7 +4,7 @@ node:
   version: '18.17.1'
   packageManager: 'pnpm'
   pnpm:
-    version: '8.7.1'
+    version: '9.0.2'
   addEnginesConstraint: true
   dedupeOnLockfileChange: true
   dependencyVersionFormat: 'workspace'
