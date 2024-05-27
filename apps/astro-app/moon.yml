@@ -36,7 +36,7 @@ tasks:
     local: true
 
   # Extends the top-level lint
-  lint:
-    args:
-      - '--ext'
-      - '.ts,.tsx,.astro'
+  # lint:
+  #   args:
+  #     - '--ext'
+  #     - '.ts,.tsx,.astro'

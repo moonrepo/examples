@@ -66,9 +66,9 @@ tasks:
       - 'tsconfig.*.json'
 
   # Extends the top-level lint
-  lint:
-    args:
-      - '--ext'
-      - '.ts,.vue'
-    deps:
-      - 'build' # Requires built TS files
+  # lint:
+  #   args:
+  #     - '--ext'
+  #     - '.ts,.vue'
+  #   deps:
+  #     - 'build' # Requires built TS files
