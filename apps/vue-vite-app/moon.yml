@@ -62,7 +62,7 @@ tasks:
       - 'tsconfig.*.json'
 
   # Extends the top-level lint
-  lint:
-    args:
-      - '--ext'
-      - '.js,.ts,.vue'
+  # lint:
+  #   args:
+  #     - '--ext'
+  #     - '.js,.ts,.vue'

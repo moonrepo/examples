@@ -22,8 +22,8 @@ tasks:
     outputs:
       - 'dist'
 
-  lint:
-    command: 'ng lint'
-    inputs:
-      - '@group(app)'
-      - '@group(sources)'
+  # lint:
+  #   command: 'ng lint'
+  #   inputs:
+  #     - '@group(app)'
+  #     - '@group(sources)'

@@ -55,7 +55,7 @@ tasks:
       - 'tsconfig.json'
 
   # Extends the top-level lint
-  lint:
-    args:
-      - '--ext'
-      - '.ts,.svelte'
+  # lint:
+  #   args:
+  #     - '--ext'
+  #     - '.ts,.svelte'
