@@ -33,6 +33,7 @@ node_modules/
 .moon/dts
 
 # Apps
+.astro/
 .output/
 .svelte-kit/
 .vercel/
