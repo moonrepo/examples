@@ -2,6 +2,8 @@
 
 A collection of packages and applications using moon and popular tooling.
 
+> Note: This repository is not actively maintained. It's merely an example of how things can work!
+
 ## Usage
 
 To begin, we suggest installing moon globally: https://moonrepo.dev/docs/install
