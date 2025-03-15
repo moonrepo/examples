@@ -8,7 +8,6 @@ logs/
 .eslintcache
 .idea
 .npm
-.vscode
 
 # Directories
 build/
